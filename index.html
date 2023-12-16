@@ -23,6 +23,7 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -37,19 +38,35 @@
 </head>
 
 <body>
-
+<div class="whatsapp-container">
+        <a href="https://wa.me/5514996684609?text=Gostaria%20de%20agendar%20uma%20consulta" target="_blank">
+            <img src="./assets/src/img/whtasapp.png" alt="WhatsApp">
+        </a>
+    </div>
 
 
   <!-- ======= Header ======= -->
  <style>
-   body {
-    margin-top: 80px;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    padding-top: 56px;
-}
+     body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            padding-top: 56px;
+        }
 
+        .whatsapp-container {
+            position: fixed;
+            bottom: 20px; /* Customize the distance from the bottom */
+            right: 20px; /* Customize the distance from the right */
+            z-index: 999; /* Ensure it's above other elements */
+        }
+
+        .whatsapp-container img {
+            width: 140px; /* Customize the width of the WhatsApp icon */
+            height: auto; /* Maintain the aspect ratio */
+            transform: scaleX(-1); /* Invert the image horizontally */
+            margin-right: -50px;
+        }
 #carouselExample {
     margin-top: 40px; /* Ajuste conforme necessário */
 }
@@ -276,13 +293,26 @@
      
       transform: translateY(-100%); /* Move a legenda para cima 100% da sua altura */
     }
+ 
   @media (max-width: 767px) {
-    .carousel-container {
-      flex-wrap: nowrap;
-    }
-
     .carousel-image {
-      width: 100%;
+     width: 368px;
+    height: 300px;
+    margin-left: 20px;
+    }
+  }
+
+ @media (max-width: 767px) {
+    .dive {
+    background: rgba(79, 79, 79, 0.83);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 500px;                    /* 80px para contar margens esquerda e direita */
+    height: 230px;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-sizing: border-box;
     }
   }
 
@@ -298,7 +328,7 @@
 
 <body>
 
-<header id="header" class="header fixed-top" style="background-image: url(./assets/src/img/MARCA-DAGUA-LOGO-2.png); width: 100%; margin-bottom: 20px;">
+<header id="header" class=" fixed-top" style="background-image: url(./assets/src/img/MARCA-DAGUA-LOGO-2.png); width: 100%; margin-bottom: 20px;">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
         <a href="index.html">
             <img src="assets/src/img/Rectangle 79.png" style="width: 100%;" alt="logo">
@@ -319,7 +349,7 @@
 
  -->
    
-<div class="custom-message" style="color:#1C5389; font-family: Roboto; font-size: 16px; font-style: normal; font-weight: 300; line-height: normal; text-align: center; margin-top:50px; margin-bottom: -40px; background-color:#FFF;">
+<div class="custom-message" style="color:#1C5389; font-family: Roboto; font-size: 16px; font-style: normal; font-weight: 300; line-height: normal; text-align: center; margin-top:20px; margin-bottom: -40px; background-color:#FFF;">
     NÃO POSSUÍMOS QUALQUER VÍNCULO COM O SUS OU OUTROS PROGRAMAS GOVERNAMENTAIS.
 </div>
  <div id="carouselExample" class="carousel slide flex-sm-row" data-bs-ride="carousel">
@@ -330,44 +360,69 @@
                 <img src="assets/src/img/imagen-fundo.jpg" class="d-block w-100" alt="Slide 1">
          <div class="overlay"></div>
 <div class="carousel-caption text-center">
-    <div  style=" background: rgba(79, 79, 79, 0.83);
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    width: 500px;                    /* 80px para contar margens esquerda e direita */
-    height: 230px;
-    margin-left: 40px;
-    margin-right: 40px;
-    box-sizing: border-box; ">
-        <h1 style="color: #F2F2F2;
-
-font-family: Panettone DEMO;">Lopes Saúde e Odontologia</h1>
-        <p style="font-family: Roboto; font-size: 30px;">Seu sorriso é nossa prioridade.</p>
-        <button class="btn btn-success" style="font-size: 20px;">Agendar Consulta</button>
+    <div class="divee">
+        <h1 class="h11">Lopes Saúde e Odontologia</h1>
+        <p class="paragrafo">Seu sorriso é nossa prioridade.</p>
+        <a href="#form">
+        <button class="btn btn-success" style="font-size: 20px;">
+        
+        Agendar Consulta</button>
+        </a>
     </div>
 </div>
 
             </div>
             <div class="carousel-item">
                 <img src="./assets/src/img/1F1A8585.jpg" class="d-block w-100"   alt="Slide 2"><div class="carousel-caption text-center">
-    <div  style=" background: rgba(79, 79, 79, 0.83);
+    <div class="divee" >
+        <h1 class="h11">Lopes Saúde e Odontologia</h1>
+        <p class="paragrafo">Seu sorriso é nossa prioridade.</p>
+        <a href="#form">
+        <button class="btn btn-success " >
+          <style>
+      .divee{
+         background: rgba(79, 79, 79, 0.83);
     color: #fff;
     padding: 20px;
     text-align: center;
     width: 500px;                    /* 80px para contar margens esquerda e direita */
-    height: 230px;
+    height: 200px;
     margin-left: 40px;
     margin-right: 40px;
-    box-sizing: border-box; ">
-        <h1 style="color: #F2F2F2;
+    box-sizing: border-box;
+    
+      }
 
-font-family: Panettone DEMO;">Lopes Saúde e Odontologia</h1>
-        <p style="font-family: Roboto; font-size: 30px;">Seu sorriso é nossa prioridade.</p>
-        <button class="btn btn-success ">
-          <style>
-      
+      .h11{
+        color: #F2F2F2;
+
+font-family: Panettone DEMO;
+      }
+
+      .paragrafo{
+font-family: Roboto; 
+font-size: 30px;
+      }
+
+      @media (max-width: 767px) {
+    .divee {
+    width: 302px;
+height: 150px;
+flex-shrink: 0;
+    margin-left: 20px;
+    }
+
+    .h11{
+      font-size: 25px;
+    }
+
+    .paragrafo{
+      font-size: 20px;
+    }
+  }
           </style>
           Agendar Consulta</button>
+          </a>
     </div>
 </div>
 
@@ -376,20 +431,12 @@ font-family: Panettone DEMO;">Lopes Saúde e Odontologia</h1>
             <div class="carousel-item">
                 <img src="./assets/src/img/imagen-3.jpg" class="d-block w-100" alt="Slide 3">
                 <div class="carousel-caption text-center">
-    <div  style=" background: rgba(79, 79, 79, 0.83);
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    width: 500px;                    /* 80px para contar margens esquerda e direita */
-    height: 230px;
-    margin-left: 40px;
-    margin-right: 40px;
-    box-sizing: border-box; ">
-        <h1 style="color: #F2F2F2;
-
-font-family: Panettone DEMO;">Lopes Saúde e Odontologia</h1>
-        <p style="font-family: Roboto; font-size: 30px;">Seu sorriso é nossa prioridade.</p>
+    <div class="divee">
+        <h1 class="h11">Lopes Saúde e Odontologia</h1>
+        <p class="paragrafo">Seu sorriso é nossa prioridade.</p>
+        <a href="#form">
         <button class="btn btn-success" style="font-size: 20px;">Agendar Consulta</button>
+        </a>
     </div>
 </div>
 
@@ -403,17 +450,17 @@ font-family: Panettone DEMO;">Lopes Saúde e Odontologia</h1>
  
     
     
-<section style="width: 100%; height: 600px; display: flex; align-items: center; justify-content: center; flex-direction: column; background-image: url(./assets/src/img/Rectangle\ 5433.png);">
+<section  id="hero" style="width: 100%; height: 800px; display: flex; align-items: center; justify-content: center; flex-direction: column; background-image: url(./assets/src/img/Rectangle\ 5433.png);">
   
       
-        <div  class="minha-div">
+        <div   class="minha-div">
           <style>
               .minha-div {
       background-color: #fff;
       padding: 20px;
       text-align: center;
       width: 500px;
-      height: 300px;
+      height:400px;
       margin-left: 40px;
       margin-right: 40px;
       margin-bottom: 20px;
@@ -423,7 +470,7 @@ font-family: Panettone DEMO;">Lopes Saúde e Odontologia</h1>
     /* Estilos para dispositivos com largura maior que 1024 pixels */
     @media (min-width: 1024px) {
       .minha-div {
-        height: 500px; /* Altura maior para dispositivos com largura maior que 1024 pixels */
+        height: 400px; /* Altura maior para dispositivos com largura maior que 1024 pixels */
         width: 600px; /* Largura maior para dispositivos com largura maior que 1024 pixels */
         font-size: 24px; /* Tamanho da fonte aumentado para telas maiores */
         line-height: 1.6; /* Espaçamento entre linhas aumentado */
@@ -433,16 +480,21 @@ font-family: Panettone DEMO;">Lopes Saúde e Odontologia</h1>
     /* Estilos para dispositivos com largura entre 769 e 1023 pixels */
     @media (min-width: 769px) and (max-width: 1023px) {
       .minha-div {
-        width: 70%; /* Ajusta a largura para 70% da largura da tela */
+        width: 70%;
+        height: 500px; /* Ajusta a largura para 70% da largura da tela */
         font-size: 20px; /* Tamanho da fonte para telas médias */
         line-height: 1.4; /* Espaçamento entre linhas para telas médias */
+      }
+      .pp{
+        margin-top: 20px;
       }
     }
 
     /* Estilos para dispositivos com largura entre 481 e 768 pixels */
     @media (min-width: 481px) and (max-width: 768px) {
       .minha-div {
-        width: 80%; /* Ajusta a largura para 80% da largura da tela */
+        width: 80%;
+        height: 500px; /* Ajusta a largura para 80% da largura da tela */
         font-size: 18px; /* Tamanho da fonte para telas menores */
         line-height: 1.3; /* Espaçamento entre linhas para telas menores */
       }
@@ -451,22 +503,24 @@ font-family: Panettone DEMO;">Lopes Saúde e Odontologia</h1>
     /* Estilos para dispositivos com largura menor ou igual a 480 pixels */
     @media (max-width: 480px) {
       .minha-div {
-        width: 90%; /* Ajusta a largura para 90% da largura da tela */
+        width: 90%; 
+        height: 700px;/* Ajusta a largura para 90% da largura da tela */
         font-size: 16px; /* Tamanho da fonte para telas muito pequenas */
         line-height: 1.2; /* Espaçamento entre linhas para telas muito pequenas */
       }
+      
     }
           </style>
             <div class="title">Lopes Saúde Odontologia</div>
             <div class="subtitle";>
-              <h1 style="font-size: 1.5em;">Nossa missão é transformar sorrisos, promovendo saúde, bem-estar, conforto e segurança por meio de tratamentos odontológicos humanizados e programas preventivos personalizados!.</h1>
+              <h1 style="font-size: 1.5em; ">Nossa missão é transformar sorrisos, promovendo saúde, bem-estar, conforto e segurança por meio de tratamentos odontológicos humanizados e programas preventivos personalizados!.</h1>
             </div>
             <br>
             <br>
-           <p> <Agende><strong>Agende sua consulta. Nós ligamos para você!</strong></p>
+           <p class="pp" style="margin-top: -30px; "> <Agende><strong>Agende sua consulta. Nós ligamos para você!</strong></p>
            
         </div>
-      <a href="#" class="btn btn-success pulsating-btn custom-width" id="agendar-btn" style="font-size: 20px;">Agendar Consulta</a>
+      <a href="#form" class="btn btn-success pulsating-btn custom-width" id="agendar-btn" style="font-size: 20px;">Agendar Consulta</a>
       
     </section  >
       <!-- Seção de Tratamentos -->
@@ -475,22 +529,22 @@ font-family: Panettone DEMO;">Lopes Saúde e Odontologia</h1>
     <div  class="tratamentos-section">
 <div class="carousel-container" data-aos="fade-up">
   <div class="carousel-image image1" style="margin-bottom: 20px;">
-    <div class="caption" style="text-align: center;">Legenda 1</div>
+    <div class="caption" style="text-align: center;">Ortodontia</div>
   </div>
   <div class="carousel-image image2"  style="margin-bottom: 20px;">
-    <div class="caption">Legenda 2</div>
+    <div class="caption">Clínica Geral</div>
   </div>
   <div class="carousel-image image3"  style="margin-bottom: 20px;">
-    <div class="caption">Legenda 3</div>
+    <div class="caption">Exodontia</div>
   </div>
   <div class="carousel-image image4" style="margin-bottom: 20px;">
-    <div class="caption">Legenda 4</div>
+    <div class="caption">Implante Dentário</div>
   </div>
   <div class="carousel-image image5" style="margin-bottom: 20px;">
-    <div class="caption">Legenda 5</div>
+    <div class="caption">Prótese Dentária</div>
   </div>
   <div class="carousel-image image6" style="margin-bottom: 20px;">
-    <div class="caption">Legenda 6</div>
+    <div class="caption">Endontia</div>
   </div>
   
   <!-- Adicione mais divs conforme necessário -->
@@ -587,6 +641,12 @@ font-family: Panettone DEMO;">Lopes Saúde e Odontologia</h1>
     .historia-image-wrapper {
       margin-top: 20px; /* Adapte o valor conforme necessário */
     }
+    .pp{
+        margin-top: 90px;
+      }
+      strong{
+        margin-top: 20px;
+      }
   }
 </style>
 </style>
@@ -601,51 +661,205 @@ font-family: Panettone DEMO;">Lopes Saúde e Odontologia</h1>
   
 
     <!-- Seção Informações de Contato -->
-    <div class="contato-section">
-    <div class="endereco">
-        <div>Unidade 1 - Duartina, avenida São Paulo, 227, Centro</div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890123456!2dLongitude!3dLatitude!4m3!3m2!1dLatitude!2dLongitude!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-    <div class="endereco">
-        <div>Unidade 2 - Bauru: Av Getúlio Vargas 22-25, sala 05, Edíficio Prime Square, Parque jardim europa</div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890123456!2dLongitude!3dLatitude!4m3!3m2!1dLatitude!2dLongitude!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <div class="contato-section" style="width: 100%; height: 900px; margin-bottom: 50px;  ;  display: flex; justify-content: center; align-items: center; flex-direction: column;">
+    <div class="endereco" style="display: flex; justify-content: center; align-items: center; width: 100%; flex-direction: column; ">
+        <div style="display: flex;  width: 100%; justify-content: center; align-items: center; flex-direction: column;">
+          <h1 style="color: #000;
+font-family: Roboto;
+font-size: 28px;
+font-style: normal;
+font-weight: 200;
+line-height: normal;
+text-align: center;">Unidade 1 - Duartina, AV São Paulo, 227, Centro</h1>
+          <a href="https://www.google.com/maps/search/?api=1&query=Duartina%2C%20Avenida%20S%C3%A3o%20Paulo%2C%20227%2C%20Centro">
+          <img src="./assets/src/img/Rectangle 45.png" alt="google-map-clinica-duartina" style="margin-bottom: 50px;">
+          </a>
+          </div>
+        
+    <div class="endereco" style="display: flex; justify-content: center; align-items: center; width: 100%; flex-direction: column; ">
+        <div style="display: flex;  width: 100%; justify-content: center; align-items: center; flex-direction: column;">
+          <h1  style="color: #000;
+font-family: Roboto;
+font-size: 28px;
+font-style: normal;
+font-weight: 200;
+line-height: normal; margin-bottom: 15px; text-align: center;" >Unidade 2 - Bauru: Av Getúlio Vargas  22-25, sala 705, Edíficio Prime Square, Parque jardim Europa</h1>
+          <a href="">
+          <img src="./assets/src/img/Rectangle 46.png" alt="google-maps-clinica-bauru">
+          </a>
+          </div>
+        
     </div>
 </div>
+    </div>
+      <section id="contact" class="contact">
 
-  </main><!-- End #main -->
+      <div class="container" data-aos="fade-up">
 
-  <!-- ======= Footer ======= 
+        <header class="section-header">
+          <h2>Contato</h2>
+          <p>Contate-nos</p>
+        </header>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6">
+
+            <div class="row gy-4">
+             
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-telephone"></i>
+                  <h3>Ligue-nos</h3>
+                   <a href="tel:+14996684609">Ligar para 14996684609</a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Email</h3>
+                  <a href="lopes.saude@hotmail.com">
+                  <p>lopes.saude@hotmail.com</p>
+                  </a>
+                </div>
+              </div>
+              
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            <form id="form">
+        <div class="row gy-4">
+            <div class="form-title">FORMULÁRIO DE CONTATO</div>
+
+            <div class="col-md-6">
+                <input type="text" name="name" class="form-control" placeholder="Digite seu nome" required>
+            </div>
+
+            <div class="col-md-6 ">
+                <input type="tel" class="form-control" name="tel" placeholder="Digite seu telefone" required>
+            </div>
+
+            <div class="col-md-12">
+                <input  type="email" class="form-control" name="email" placeholder="Digite seu email" required>
+            </div>
+
+            <div class="col-md-6">
+                <input type="text" name="city" class="form-control" placeholder="Digite sua cidade" required>
+            </div>
+
+            <div class="col-md-12">
+                <textarea  type="text" class="form-control" name="message" rows="6" placeholder="Escreva em detalhes sua condição odontológica" required></textarea>
+            </div>
+            <div style="display: flex; justify-content: center; align-items: center;">
+            <button class="btn btn-success pulsating-btn custom-width " style="align-items: center; justify-content: center;" id="agendar-btn">Agendar Consulta</button>
+            </div>
+            
+                
+                
+            </div>
+        </div>
+    </form>
+
+    <script>
+        $(document).ready(function () {
+            $("#form").submit(function (e) {
+                e.preventDefault();
+
+                var name = $("input[name='name']").val();
+                var tel = $("input[name='tel']").val();
+                var email = $("input[name='email']").val();
+                var city = $("input[name='city']").val();
+                var message = $("textarea[name='message']").val();
+
+                // Crie o link do WhatsApp com as informações do formulário
+                var whatsappLink = "https://wa.me/5514996684609?text=" +
+                    "Nome: " + name + "%0A" +
+                    "Telefone: " + tel + "%0A" +
+                    "Email: " + email + "%0A" +
+                    "Cidade: " + city + "%0A" +
+                    "Mensagem: " + message;
+
+                // Abra o link no WhatsApp
+                window.open(whatsappLink, '_blank');
+            });
+        });
+    </script>
+          </div>
    
 
 
+<style>
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./assets/src/img/Rectangle\ 5431.png);
+    padding: 20px;
+   
+    
+    color: white;
+  }
+
+  .form-title {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.form-label {
   
-  <footer id="footer" style="width: 100%; background-image: ">
-  <div class="footer-top">
-    <div class="container">
-      <div class="row gy-4">
-        
+margin-left: -250px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
 
-        <div class="col-lg-5 col-md-6 footer-info">
-         
-        </div>
 
-        <div class="col-lg-3 col-md-12">
-          <hr class="d-md-none my-4" style="width: 100%; color: #fff; height: 5px;">
-          <div class="container">
-            <div class="copyright" style="color: #FFF;">
-              
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
+  .form-input,
+  .form-textarea {
+    width: 327px;
+    height: 43px;
+    border-radius: 24px;
+    background: #D9D9D9;
+    padding: 10px;
+    box-sizing: border-box;
+  }
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  .form-textarea {
+    height: 121px;
+    resize: none;
+  }
 
-  <!-- Vendor JS Files -->
+  .form-button {
+    width: 200px;
+    height: 43px;
+    margin-bottom: 100px;
+    border: none;
+    border-radius: 24px;
+    background: #28a745;
+    cursor: pointer;
+  }
+</style>
+
+  </main><!-- End #main -->
+<div style="background-color: #fff; width: 100%; height: 27px; margin-top: 10px; ;" >
+
+</div>
+
 
  <footer id="footer" style="background-image: url(./assets/src/img/MARCA-DAGUA-LOGO-2.png); background-size: cover; width: 100%;">
 
@@ -660,18 +874,27 @@ font-family: Panettone DEMO;">Lopes Saúde e Odontologia</h1>
         </div>
 
         <div class="col-lg-5 col-md-12 footer-info">
-          <a href="index.html" class="logo d-flex align-items-center">
+          <a href="index.html" class="logo d-flex align-items-center" style="justify-content: center; align-items: center;">
             <img src="assets/src/img/Rectangle 79.png" alt="" style="width: 150px; height: auto;">
           </a>
-          <p style="color: #FFF; font-size: 16px; margin-top: 20px;">Nos siga nas redes sociais</p>
-          <div class="rectangle" style="width: 60px; height: 8px; border-radius: 30px; background: rgba(217, 217, 217, 0.58); margin-top: 5px;"></div>
-          <div class="social-links mt-3">
-            <a href="#" class="facebook"><i class="bi bi-facebook" style="color: #FFF; font-size: 24px;"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram" style="color: #FFF; font-size: 24px;"></i></a>
-            <a href="#" class="whatsapp"><i class="bi bi-whatsapp" style="color: #FFF; font-size: 24px;"></i></a>
-          </div>
+          <p style="color: #FFF; font-size: 16px; margin-top: 20px; display: flex; justify-content: center; align-items: center;">Nos siga nas redes sociais</p>
+          <div  style=" width: 60px; height: 10px; border-radius: 15px; background: rgba(217, 217, 217, 0.58); display: flex; align-items: center; margin-left: 110px;"></div>
+          <div style="display: flex; justify-content: center; align-items: center; flex-direction: row; gap: 10px;">
+         <div class="social-links mt-3">
+              
+              <a href="https://www.facebook.com/lopesaude?mibextid=ZbWKwL" class="facebook"><i class="bi bi-facebook" style="color: #fff;"></i></a>
+              <a href="https://www.instagram.com/lopes_saude?igshid=NGVhN2U2NjQ0Yg==" class="instagram"><i class="bi bi-instagram" style="color: #fff;"></i></a>
+              <a href="https://wa.me/5514996684609?text=Gostaria%20de%20agendar%20uma%20consulta" class="linkedin" style="color: #fff;"><i class="bi bi-whatsapp"></i></a>
+            </div>
+            </div>
+        
+    </div>
         </div>
       </div>
+
+      <style>
+        
+      </style>
 
       <!-- Espaçamento entre as seções -->
 <!-- Linha divisória -->
@@ -688,7 +911,7 @@ font-family: Panettone DEMO;">Lopes Saúde e Odontologia</h1>
         &copy; Copyright 2023-<strong><span> Lopes Saúde e Odontologia </span></strong>. All Rights Reserved
       </div>
       <div class="credits" style="color: #FFF; font-size: 14px; text-align: center;">
-        <a href="https://bootstrapmade.com/" style="color: #fff;">Designed by Bocardi_Dev</a>
+        <a href="" style="color: #fff;">Designed by Bocardi_Dev</a>
       </div>
     </div>
   </div>
