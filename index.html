@@ -328,13 +328,13 @@
 
 <body>
 
-<header id="header" style="background-image: url(./assets/src/img/MARCA-DAGUA-LOGO-2.png); width: 100%; margin-bottom: 20px;">
+<header id="header" class="header" style="background-image: url(./assets/src/img/MARCA-DAGUA-LOGO-2.png); width: 100%; margin-bottom: 20px;">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
         <a href="index.html">
             <img src="assets/src/img/Rectangle 79.png" style="width: 100%;" alt="logo">
         </a>
 
-        <nav id="navbar" class="navbar  d-flex">
+        <nav id="navbar" class="navbar ">
             <ul>
                 <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
                 <li><a class="nav-link scrollto" href="institucional.html">Institucional</a></li>
@@ -343,6 +343,13 @@
             </ul>
             <i class="bi bi-list mobile-nav-toggle" style="margin-left:-90px;"></i>
         </nav><!-- .navbar -->
+
+        <style>
+              #navbar {
+    z-index: 1000; /* ou qualquer valor maior do que o z-index do header e das imagens */
+}
+
+        </style>
     </div>
 </header><!-- End Header
 
@@ -456,6 +463,8 @@ flex-shrink: 0;
       
         <div   class="minha-div">
           <style>
+
+        
               .minha-div {
       background-color: #fff;
       padding: 20px;
