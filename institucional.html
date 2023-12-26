@@ -351,9 +351,9 @@ height: 165px; }
         <nav id="navbar" class="navbar  d-flex">
             <ul>
                 <li><a class="nav-link scrollto active" href="index.html">Inicio</a></li>
-                <li><a class="nav-link scrollto" href="#about">Institucional</a></li>
-                <li><a class="nav-link scrollto" href="#beneficios">Tratamentos</a></li>
-                <li><a class="nav-link scrollto" href="#servicos">Duvidas & Dicas</a></li>
+                <li><a class="nav-link scrollto" href="#hero">Institucional</a></li>
+                <li><a class="nav-link scrollto" href="tratamentos.html">Tratamentos</a></li>
+                <li><a class="nav-link scrollto" href="duvidas&perguntas.html">Duvidas & Dicas</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle" style="margin-left:-90px;"></i>
         </nav><!-- .navbar -->
@@ -472,133 +472,116 @@ flex-shrink: 0;
   <main id="main">
  
     
-    
-<section  id="hero" style="width: 100%; height: 800px; display: flex; align-items: center; justify-content: center; flex-direction: column; background-image: url(./assets/src/img/Rectangle\ 5433.png);">
-  <h1 style="color: #FFF;
-font-family: Hermeneus One;
-font-size: 32px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;">Nossos Profisionais</h1>
-<br>
-<br>
-      
-        <div   class="minha-div">
-          <style>
-              .minha-div {
-      background-color: #fff;
-      padding: 20px;
-      text-align: center;
-      width: 300px;
-      height:400px;
-      margin-left: 40px;
-      margin-right: 40px;
-      margin-bottom: 20px;
-      box-sizing: border-box;
-    }
-
-    /* Estilos para dispositivos com largura maior que 1024 pixels */
-    @media (min-width: 1024px) {
-      .minha-div {
-        height: 600px; /* Altura maior para dispositivos com largura maior que 1024 pixels */
-        width: 380px; /* Largura maior para dispositivos com largura maior que 1024 pixels */
-        font-size: 24px; /* Tamanho da fonte aumentado para telas maiores */
-        line-height: 1.6; /* Espaçamento entre linhas aumentado */
-      }
-    }
-
-    /* Estilos para dispositivos com largura entre 769 e 1023 pixels */
-    @media (min-width: 769px) and (max-width: 1023px) {
-      .minha-div {
-        width: 50%;
-        height: 700px; /* Ajusta a largura para 70% da largura da tela */
-        font-size: 20px; /* Tamanho da fonte para telas médias */
-        line-height: 1.4; /* Espaçamento entre linhas para telas médias */
-      }
-      .pp{
-        margin-top: 20px;
-      }
-    }
-
-    /* Estilos para dispositivos com largura entre 481 e 768 pixels */
-    @media (min-width: 481px) and (max-width: 768px) {
-      .minha-div {
-        width: 60%;
-        height: 700px; /* Ajusta a largura para 80% da largura da tela */
-        font-size: 18px; /* Tamanho da fonte para telas menores */
-        line-height: 1.3; /* Espaçamento entre linhas para telas menores */
-      }
-    }
-
-    /* Estilos para dispositivos com largura menor ou igual a 480 pixels */
-    @media (max-width: 480px) {
-      .minha-div {
-        width: 80%; 
-        height: 700px;/* Ajusta a largura para 90% da largura da tela */
-        font-size: 16px; /* Tamanho da fonte para telas muito pequenas */
-        line-height: 1.2; /* Espaçamento entre linhas para telas muito pequenas */
-      }
-
-      
-      
-    }
-
-  @media (max-width: 402px) {
-      .minha-div {
-        width: 90%; 
-        height: 700px;/* Ajusta a largura para 90% da largura da tela */
-        font-size: 16px; /* Tamanho da fonte para telas muito pequenas */
-        line-height: 1.2; /* Espaçamento entre linhas para telas muito pequenas */
-      }
-
-      
-      
-    }
-
-      @media (max-width: 200px) {
-      .minha-div {
-        width: 100%; 
-        height: 700px;/* Ajusta a largura para 90% da largura da tela */
-        font-size: 16px; /* Tamanho da fonte para telas muito pequenas */
-        line-height: 1.2; /* Espaçamento entre linhas para telas muito pequenas */
-      }
-      .imge{
-        width: 700px;
-      }
-
-      
-      
-    }
 
 
 
-    
-          </style>
-          <div class="carousel">
-    <div class="item">
-      <div class="title" style="font-family: Hermeneus One;">Dra. Karen</div>
-      <div class="subtitle">
-        <h1 style="color: #000; font-family: Roboto; font-size: 23px; font-style: normal; font-weight: 300; line-height: normal;">
-          Dra. Karen Cristina Costa Lopes Aleixo
-          Formada em 2006, pela Universidade do Sagrado Coração (USC), sua especialidade é Odontologia e Prótese dentária.
-        </h1>
-      </div>
-      <img class="imge" style="width: 250px; height: 350px;" src="./assets/src/img/Profissionais/KAREN.png" alt="">
-    </div>
 
-    
+
+
+<section id="team" style="background-image: url(./assets/src/img/Rectangle\ 5433.png);   " class="team">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2 style="color: #fff; font-size: 25px;">Nossos Profissionais</h2>
+         
+        </header>
+
+        <div class="row gy-4">
+           <div class="col-lg-3 col-md-6 d-flex align-items-stretch"    data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/src/img/Profissionais/KAREN.png" class="img-fluid" alt="">
+             
+              </div>
+              <div class="member-info">
+                <h4>Dra. Karen</h4>
+                
+                <p>Dra. Karen Cristina Costa Lopes Aleixo. Formada em 2006, pela Universidade do Sagrado Coração (USC),
+                  sua especialidade é Ortodontia e Prótese dentária. </p>
+               
+              
+              </div>
+            </div>
+          </div>
+
+
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch"    data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/src/img/Profissionais/LAÍS.png" class="img-fluid" alt="">
+             
+              </div>
+              <div class="member-info">
+                <h4>Dra. Lais</h4>
+                
+                <p>Dra. Laís Benicá Pereira de Souza
+Formada em 2021, 
+pela Universidade de Marília (UNIMAR), sua
+especialidade 
+é Clínico geral, Cirurgia oral menor e harmonização facial. 
+E,
+está se especializando em Cirurgia 
+e traumatologia bucomaxilofacial.</p>
+              </div>
+            </div>
+          </div>
+
+
+   
+               <div class="col-lg-3 col-md-6 d-flex align-items-stretch"  data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/src/img/Profissionais/RAFAEL.png" class="img-fluid" alt="">
+             
+              </div>
+              <div class="member-info">
+                <h4>Dr. Rafael</h4>
+                
+                <p>Dr. Rafael Rebelato
+Formado em 2010, pela Universidade de São Paulo (USP), sua
+especialidade é Endodontia..</p>
+              </div>
+            </div>
+          </div>
+
+          <br>
+               <div class="col-lg-3 col-md-6 d-flex align-items-stretch"  data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/src/img/Profissionais/FRANCIELLY.png" class="img-fluid" alt="">
+             
+              </div>
+              <div class="member-info">
+                <h4>Dra. Francielly</h4>
+                
+                <p>Dra. Francielly Prenhaca Vilas Boas Oliveira
+Formada em 2017, pela Universidade do Sagrado Coração (USC), sua
+especialidade é Periodontia e Implantodontia, além de atuar como
+colaboradora no curso
+ Ectoperio desde 2019.</p>
+              </div>
+            </div>
+          </div>
+               
 
       </div>
-      
-    </section  >
+
+    </section>
+
+
+
+
       <!-- Seção de Tratamentos -->
       <section class="tratamentos" style="width: 100%;   background: rgba(130, 130, 130, 0.19);  ">
      
-    <div  class="tratamentos-section">
+    <section  class="tratamentos-section">
       <div style="display: flex; justify-content: center; align-items: center; color:#174B7D;">
       <h1>Avaliações</h1>
       </div>
 <div class="carousel-container" data-aos="fade-up">
+ 
   
   <div class="carousel-image image1" style="margin-bottom: 20px;">
    
@@ -623,29 +606,77 @@ line-height: normal;">Nossos Profisionais</h1>
   <div class="carousel-image image9" style="margin-bottom: 20px;"></div>
   <div class="carousel-image image10" style="margin-bottom: 20px;"></div>
   
+    
   <!-- Adicione mais divs conforme necessário -->
 </div>
+ </section>
  
 
-<div class="historia-section">
-  <div class="historia-text">
-    <div>
-      <h1 class="historia-title">Nossa História</h1>
-    </div>
-    <p class="historia-text" style="color: #FFF; ">
-      A Lopes saúde e Odontologia surgiu em 2013 com o sonho de atender as pessoas de todas as classes da cidade de Duartina e região. Onde a dra. Karen Cristina Costa Lopes Aleixo já estava atendendo a mais tempo mas somente com um consultório.
-
-      Hoje em 2023 podemos falar que crescemos bastante, localizados na avenida São Paulo 227 centro Duartina em um prédio com 3 consultórios uma recepção confortável e climatizada para dar a melhor qualidade para seus pacientes, salas com o máximo de conforto e qualidade. Uma equipe qualificada e dedicada.
-      <a href="#" class="equipe-link">Conheça nossa equipe</a>
-    </p>
-  </div>
+<section class="tratamentos" style="width: 100%;   background-image: url(./assets/src/img/Rectangle\ 5431.png);  ">
+     
+    <div  class="tratamentos-section">
+      <div style="display: flex; justify-content: center; align-items: center; color:#174B7D;">
+      <h1 style="color: #fff;">Antes & Depois</h1>
+      </div>
+<div class="carousel-container" data-aos="fade-up">
+ 
+  
+  <div  style="margin-bottom: 20px;">
   <div class="historia-image-wrapper">
-    <div class="historia-image">
-      <img src="./assets/src/img/interiorclinica (1).jpeg" alt="">
-    </div>
-  </div>
+    <style> 
+      .historia-image-wrapper {
+      margin-top: 20px; /* Adapte o valor conforme necessário */
+    }
+  .historia-image-wrapper {
+    width: 100%; /* Alterada a largura para ocupar 100% da largura da tela */
+    max-width: 600px; /* Adapte o valor conforme necessário */
+    margin-top: 20px; /* Adapte o valor conforme necessário */
+    border: 10px solid #FFF; /* Adiciona uma borda branca de 10 pixels */
+    box-sizing: border-box; /* Mantém a largura total incluindo a borda */
+  }</style>
+   <img src="./assets/src/img/antesedepois (1).png" style="  width:400px;
+height: 350px;" alt="">
 </div>
-
+  </div>
+  
+  <div  style="margin-bottom: 20px;">
+  <div class="historia-image-wrapper">
+   <img src="./assets/src/img/antesedepois (2).png" style="  width: 400px;
+height: 350px;" alt="">
+  </div>
+  </div>
+  <div  style="margin-bottom: 20px;">
+  <div class="historia-image-wrapper">
+    <img src="./assets/src/img/antesedepois (3).png" style="  width: 350px;
+height: 350px;" alt="">
+  </div>
+  </div>
+  <div  style="margin-bottom: 20px;">
+  <div class="historia-image-wrapper">
+   <img src="./assets/src/img/antesedepois (4).png" style=" margin-left: 10px; width: 350px;
+height: 350px;" alt="">
+  </div>
+  </div>
+  <div  style="margin-bottom: 20px;">
+  <div class="historia-image-wrapper">
+    <img src="./assets/src/img/antesedepois (5).png" style=" margin-left: 10px; width: 350px;
+height: 350px;" alt="">
+  </div>
+  </div>
+  <div  style="margin-bottom: 20px;">
+  <div class="historia-image-wrapper">
+   <img src="./assets/src/img/antesedepois (6).png" style=" margin-left: 10px; width: 350px;
+height: 350px;" alt="">
+  </div>
+  </div>
+  <div  style="margin-bottom: 20px;">
+  <div class="historia-image-wrapper">
+  <img src="./assets/src/img/antesedepois (7).png" style=" margin-left: 10px; width: 350px;
+height: 350px;" alt="">
+  </div>
+  </div>
+ 
+  
 
       <style>
  .historia-section {
@@ -737,37 +768,181 @@ line-height: normal;">Nossos Profisionais</h1>
   
 
     <!-- Seção Informações de Contato -->
-    <div class="contato-section" style="width: 100%; height: 900px; margin-bottom: 50px;  ;  display: flex; justify-content: center; align-items: center; flex-direction: column;">
-    <div class="endereco" style="display: flex; justify-content: center; align-items: center; width: 100%; flex-direction: column; ">
-        <div style="display: flex;  width: 100%; justify-content: center; align-items: center; flex-direction: column;">
-          <h1 style="color: #000;
-font-family: Roboto;
-font-size: 28px;
-font-style: normal;
-font-weight: 200;
-line-height: normal;
-text-align: center;">Unidade 1 - Duartina, AV São Paulo, 227, Centro</h1>
-          <a href="https://www.google.com/maps/search/?api=1&query=Duartina%2C%20Avenida%20S%C3%A3o%20Paulo%2C%20227%2C%20Centro">
-          <img src="./assets/src/img/Rectangle 45.png" alt="google-map-clinica-duartina" style="margin-bottom: 50px;">
-          </a>
-          </div>
-        
-    <div class="endereco" style="display: flex; justify-content: center; align-items: center; width: 100%; flex-direction: column; ">
-        <div style="display: flex;  width: 100%; justify-content: center; align-items: center; flex-direction: column;">
-          <h1  style="color: #000;
-font-family: Roboto;
-font-size: 28px;
-font-style: normal;
-font-weight: 200;
-line-height: normal; margin-bottom: 15px; text-align: center;" >Unidade 2 - Bauru: Av Getúlio Vargas  22-25, sala 705, Edíficio Prime Square, Parque jardim Europa</h1>
-          <a href="https://www.google.com/maps/search/Bauru:+Av+Get%C3%BAlio+Vargas++22-25,+sala+705,+Ed%C3%ADficio+Prime+Square,+Parque+jardim+Europa/@-22.3521589,-49.0528991,17z/data=!3m1!4b1?entry=ttu">
-          <img src="./assets/src/img/Rectangle 46.png" alt="google-maps-clinica-bauru">
-          </a>
-          </div>
-        
-    </div>
+   <section class="tratamentos" style="width: 100%;  background-color: #D9D9D9; ">
+     
+    <div  class="tratamentos-section">
+      <div style="display: flex; justify-content: center; align-items: center; color:#174B7D;">
+      <h1 style="color:#000; margin-bottom: 20px;">Interior Clínica</h1>
+      </div>
+<div class="carousel-container" style="margin-top: 30px;" data-aos="fade-up">
+ 
+  
+  <div  style="margin-bottom: 20px;">
+  
+    <style> 
+      .historia-image-wrapper {
+      margin-top: 20px; /* Adapte o valor conforme necessário */
+    }
+  .historia-image-wrapper {
+    width: 100%; /* Alterada a largura para ocupar 100% da largura da tela */
+    max-width: 600px; /* Adapte o valor conforme necessário */
+    margin-top: 20px; /* Adapte o valor conforme necessário */
+    border: 10px solid #FFF; /* Adiciona uma borda branca de 10 pixels */
+    box-sizing: border-box; /* Mantém a largura total incluindo a borda */
+  }</style>
+   <img src="./assets/src/img/interiorclinica (8).jpeg" style="   margin-left: 10px; width: 373px;
+height: 480px; border-radius: 34px;" alt="">
+
+  </div>
+  
+  <div  style="margin-bottom: 20px;">
+  
+   <img src="./assets/src/img/interiorclinica (2).jpeg" style="   margin-left: 10px; width: 373px;
+height: 480px; border-radius: 34px;" alt="">
+  
+  </div>
+  <div  style="margin-bottom: 20px;">
+  
+    <img src="./assets/src/img/interiorclinica (6).jpeg" style="   margin-left: 10px; width: 373px;
+height: 480px; border-radius: 34px;" alt="">
+  
+  </div>
+  <div  style="margin-bottom: 20px;">
+  
+   <img src="./assets/src/img/interiorclinica (7).jpeg" style=" margin-left: 10px; width: 373px;
+height: 480px; border-radius: 34px; margin-bottom: 20px;"  alt="">
+  
+  </div>
 </div>
-    </div>
+
+
+ 
+<div class="carousel-container" style="margin-top: 30px;" data-aos="fade-up">
+ 
+  
+  <div  style="margin-bottom: 20px;">
+  
+    <style> 
+      .historia-image-wrapper {
+      margin-top: 20px; /* Adapte o valor conforme necessário */
+    }
+  .historia-image-wrapper {
+    width: 100%; /* Alterada a largura para ocupar 100% da largura da tela */
+    max-width: 600px; /* Adapte o valor conforme necessário */
+    margin-top: 20px; /* Adapte o valor conforme necessário */
+    border: 10px solid #FFF; /* Adiciona uma borda branca de 10 pixels */
+    box-sizing: border-box; /* Mantém a largura total incluindo a borda */
+  }</style>
+   <img src="./assets/src/img/interiorclinica (1).jpeg" style="   margin-left: 10px; width: 389px;
+height: 352px; border-radius: 34px;" alt="">
+
+  </div>
+  
+  <div  style="margin-bottom: 20px;">
+  
+   <img src="./assets/src/img/interiorclinica (3).jpeg" style="   margin-left: 10px; width: 389px;
+height: 352px; border-radius: 34px;" alt="">
+  
+  </div>
+  <div  style="margin-bottom: 20px;">
+  
+    <img src="./assets/src/img/interiorclinica (14).jpeg" style="   margin-left: 10px; width: 389px;
+height: 352px; border-radius: 34px;" alt="">
+  
+  </div>
+  <div  style="margin-bottom: 20px;">
+  
+   <img src="./assets/src/img/interiorclinica (9).jpeg" style=" margin-left: 10px; width: 389px;
+height: 352px; border-radius: 34px; margin-bottom: 20px;"  alt="">
+  
+  </div>
+</div>
+ 
+  
+
+      <style>
+ .historia-section {
+    width: 100%;
+    background-color: #1C5389;
+    height: auto; /* Alterada a altura para se ajustar ao conteúdo */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divisão de duas colunas */
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 50px;
+  }
+
+  .historia-title {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 60px; /* Tamanho da fonte aumentado */
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: -100px;
+  }
+
+  .historia-text {
+    max-width: 600px; /* Adapte o valor conforme necessário */
+    text-align: justify; /* Justifica o texto */
+    color: #FFF;
+  }
+  .historia-image-wrapper {
+    width: 100%; /* Alterada a largura para ocupar 100% da largura da tela */
+    max-width: 600px; /* Adapte o valor conforme necessário */
+    margin-top: 20px; /* Adapte o valor conforme necessário */
+    border: 10px solid #FFF; /* Adiciona uma borda branca de 10 pixels */
+    box-sizing: border-box; /* Mantém a largura total incluindo a borda */
+  }
+
+  .historia-image img {
+    width: 100%;
+    max-width: 100%; /* Utiliza toda a largura da coluna */
+    height: auto;
+    display: block;
+  }
+
+  .equipe-link {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-top: 20px; /* Adapte o valor conforme necessário */
+  }
+
+  @media (max-width: 767px) {
+    .historia-section {
+      grid-template-columns: 1fr; /* Uma única coluna para dispositivos móveis */
+      height: auto; /* Ajusta a altura conforme necessário */
+    }
+
+    .historia-title {
+      font-size: 30px; /* Tamanho menor para dispositivos móveis */
+      margin-top: 0; /* Removido o ajuste negativo para o título */
+    }
+
+    .historia-text {
+      margin-right: 0;
+      margin-top: 20px; /* Adapte o valor conforme necessário */
+    }
+
+    .historia-image-wrapper {
+      margin-top: 20px; /* Adapte o valor conforme necessário */
+    }
+    .pp{
+        margin-top: 90px;
+      }
+      strong{
+        margin-top: 20px;
+      }
+  }
+</style>
+
+
+
+
+    </section>
       <section id="contact" class="contact">
 
       <div class="container" data-aos="fade-up">
@@ -937,6 +1112,7 @@ margin-left: -250px;
 </div>
 
 
+ 
  <footer id="footer" style="background-image: url(./assets/src/img/MARCA-DAGUA-LOGO-2.png); background-size: cover; width: 100%;">
 
   <div class="footer-top " style="width: 100%;">
@@ -993,6 +1169,7 @@ margin-left: -250px;
   </div>
 </div>
 </footer>
+
 
 
 
