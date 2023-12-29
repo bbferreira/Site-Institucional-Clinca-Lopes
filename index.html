@@ -765,30 +765,7 @@ line-height: normal; margin-bottom: 15px; text-align: center;" >Unidade 2 - Baur
             </div>
         </div>
     </form>
-    <script>
-        $(document).ready(function () {
-            $("#form").submit(function (e) {
-                e.preventDefault();
-
-                var name = $("input[name='name']").val();
-                var tel = $("input[name='tel']").val();
-                var email = $("input[name='email']").val();
-                var city = $("input[name='city']").val();
-                var message = $("textarea[name='message']").val();
-
-                // Crie o link do WhatsApp com as informações do formulário
-                var whatsappLink = "https://wa.me/5514996684609?text=" +
-                    "Nome: " + name + "%0A" +
-                    "Telefone: " + tel + "%0A" +
-                    "Email: " + email + "%0A" +
-                    "Cidade: " + city + "%0A" +
-                    "Mensagem: " + message;
-
-                // Abra o link no WhatsApp
-                window.open(whatsappLink, '_blank');
-            });
-        });
-    </script>
+    
     </div>
     
 
