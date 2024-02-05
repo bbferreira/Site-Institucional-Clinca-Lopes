@@ -251,63 +251,40 @@
  
   .carousel-container {
   display: flex;
-  flex-direction: column; /* Inicia com disposição em coluna para mobile */
+  flex-direction: column;
   align-items: center;
-  overflow-x:  visible; /* Esconde o overflow horizontal */
- /* Permite scroll vertical se necessário */
+  width: 100%;
+  overflow-x: hidden;
 }
 
-/* Estilos para imagens do carrossel */
 .carousel-image {
   background-size: cover;
   background-position: center;
   border-radius: 24px;
-  width: 90%; /* Largura para mobile */
-  height: 300px; /* Altura fixa, ajuste conforme necessário */
-  margin-bottom: 20px; /* Espaçamento entre imagens */
-  opacity: 1; /* Ajuste conforme necessário para animação */
+  width: 90%; /* Ajuste inicial para mobile */
+  margin-bottom: 20px;
 }
 
-/* Responsividade para Desktop */
+/* Responsividade para dispositivos maiores */
 @media (min-width: 768px) {
   .carousel-container {
-    flex-direction: row; /* Muda para disposição em linha para desktop */
-    flex-wrap: wrap; /* Permite múltiplas linhas se houver muitas imagens */
-    justify-content: space-around; /* Espaçamento uniforme */
-    overflow-y: hidden; /* Previne scroll vertical desnecessário no desktop */
-  }
-
-
-  
-  .carousel-image {
-    width: calc(50% - 40px); /* Ajusta para duas imagens por linha com espaçamento */
-    margin: 20px; /* Espaçamento ao redor das imagens */
-  }
-}
-
-@media (max-width: 767px) {
-  .carousel-container {
-    flex-direction: column; /* Mantém disposição em coluna para mobile */
-    width: 100%;
-    
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   .carousel-image {
-    width: 80%; /* Ajuste de largura para mobile */
+    width: calc(33% - 40px); /* Ajusta para três imagens por linha com espaçamento */
+    height: auto; /* Mantém proporção das imagens */
+    margin: 20px;
   }
 }
 
 
 
 
-/* Estilos para dispositivos móveis */
-@media (max-width: 767px) {
-  .tratamentoss {
-    height: 1200      px; /* Aumenta a altura para dispositivos móveis */
-  }
 
-  
-}
+
 
 
   /* Adicione as classes específicas para cada imagem */
@@ -329,6 +306,21 @@ height: 165px; }
 height: 165px; }
  .image9 { background-image: url('./assets/src/img/avaliaçaogoogle\ \(9\).jpeg');width: 400px;
 height: 165px; }
+
+@media (max-width: 400px) {
+  .image1{
+   width: 330px;
+   height: 120px;
+   align-items: center;
+  }
+
+  .image2, .image3, .image4, .image5, .image6, .image7, .image8,.image9{
+    width: 320px;
+     height: 130px;
+   align-items: center;
+  }
+  
+}
 
   </style>
 </head>
@@ -561,6 +553,8 @@ flex-shrink: 0;
   <div class="carousel-image image7" data-aos="fade-left" data-aos-duration="1000"  style="margin-bottom: 20px;"></div>
   <div class="carousel-image image8" data-aos="fade-left" data-aos-duration="1000"  style="margin-bottom: 20px;"></div>
   <div class="carousel-image image9" data-aos="fade-left" data-aos-duration="1000"  style="margin-bottom: 20px;"></div>
+
+  
   
   <!-- Adicione mais divs conforme necessário -->
 </div>
