@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -36,7 +37,9 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
-
+<script>
+  AOS.init();
+</script>
 <body>
 <div class="whatsapp-container">
         <a href="https://wa.me/5514996684609?text=Gostaria%20de%20agendar%20uma%20consulta" target="_blank">
@@ -260,48 +263,60 @@
   }
 
   .carousel-container {
-    display: flex;
-    gap: 20px; /* Adiciona espaçamento entre as imagens */
-    overflow-x: auto; /* Permitir rolar horizontalmente */
-  }
+  display: flex;
+  flex-direction: column; /* Garante disposição vertical no mobile */
+  align-items: center; /* Centraliza as imagens no mobile */
+  overflow: hidden;
+}
 
+/* Adiciona animações individuais para cada imagem */
+.carousel-image {
+  background-size: cover;
+  background-position: center;
+  border-radius: 24px;
+  width: 90%; /* Ajuste para tamanhos maiores */
+  max-width: 368px; /* Limite máximo para desktop */
+  height: 300px;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: slideInRight 0.5s forwards;
+  cursor: pointer; /* Muda o cursor para indicar clicável */
+  position: relative; /* Necessário para posicionar a legenda absolutamente dentro */
+}
+
+
+@media (min-width: 768px) {
+  .carousel-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Distribui espaço entre imagens */
+  }
   .carousel-image {
-    width: 368px;
-    height: 300px;
-    flex-shrink: 0;
-    background-size: cover;
-    background-position: center;
-    border-radius: 24px;
-    position: relative;
-    overflow: hidden; /* Esconde a legenda por padrão */
-    transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave */
+    width: calc(50% - 40px); /* Duas imagens por linha com espaçamento */
+    margin: 20px; /* Espaçamento entre imagens */
   }
+}
 
-  .carousel-image:hover {
-    transform: scale(1.1); /* Efeito de escala ao passar o mouse */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@media (max-width: 767px) {
+  .carousel-image {
+    width: 80%; /* Ocupa mais espaço na tela */
   }
- .caption {
-    width: 164px;
-      height: 32px;
-      flex-shrink: 0;
-      background-color: rgba(255, 255, 255, 0.7); /* Cor de fundo da legenda */
-      padding: 5px;
-      text-align: center;
-     
-      transform: translateY(-100%); /* Move a legenda para cima 100% da sua altura */
-    }
- 
-  @media (max-width: 767px) {
-    .carousel-image {
-     width: 368px;
-    height: 300px;
-    margin-left: 20px;
-    }
-  }
+}
 
+.caption {
+  display: none; /* Esconde a legenda por padrão */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  padding: 5px;
+  transition: 0.3s; /* Suaviza o aparecimento */
+}
+
+.carousel-image:hover .caption {
+  display: block; /* Mostra a legenda ao passar o mouse */
+}
  @media (max-width: 767px) {
     .dive {
     background: rgba(79, 79, 79, 0.83);
@@ -317,23 +332,25 @@
   }
 
   /* Adicione as classes específicas para cada imagem */
-  .image1 { background-image: url('./assets/src/img/tratamentos/pexels-cottonbro-studio-6529121.jpg'); }
-  .image2 { background-image: url('./assets/src/img/tratamentos/clareamento\ dentario.webp'); }
-  .image3 { background-image: url('./assets/src/img/tratamentos/exodontia.jfif'); }
-  .image4 { background-image: url('./assets/src/img/tratamentos/implates\ dentarios.jpg'); }
-  .image5 { background-image: url('./assets/src/img/tratamentos/protese-dentaria-1.jfif'); }
-  .image6 { background-image: url('./assets/src/img/tratamentos/endodontia.jfif'); }
+  .image1 { background-image: url('./assets/src/img/tratamentos/pexels-cottonbro-studio-6529121.jpg');  width: 300px;}
+  .image2 { background-image: url('./assets/src/img/tratamentos/clareamento\ dentario.webp');  width: 300px; }
+  .image3 { background-image: url('./assets/src/img/tratamentos/exodontia.jfif');  width: 300px; }
+  .image4 { background-image: url('./assets/src/img/tratamentos/implates\ dentarios.jpg');  width: 300px;}
+  .image5 { background-image: url('./assets/src/img/tratamentos/protese-dentaria-1.jfif');  width: 300px;}
+  .image6 { background-image: url('./assets/src/img/tratamentos/endodontia.jfif'); width: 300px; }
   </style>
 </head>
 
 <body>
 
-<header id="header"  style="background-image: url(./assets/src/img/MARCA-DAGUA-LOGO-2.png); width: 100%; margin-bottom: 20px;">
+<header   id="header"  style="background-image: url(./assets/src/img/MARCA-DAGUA-LOGO-2.png); width: 100%; margin-bottom: 20px; height: 120px;">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      
         <a href="index.html">
-            <img src="assets/src/img/Rectangle 79.png" style="width: 100%;" alt="logo">
+            <img src="assets/src/img/Black White Minimalist Logo (1).png" style="width: 190px; height: 160px;" alt="logo">
+          
         </a>
-
+    
         <nav id="navbar" class="navbar ">
             <ul>
                 <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
@@ -356,10 +373,10 @@
 
  -->
    
-<div class="custom-message" style="color:#1C5389; font-family: Roboto; font-size: 16px; font-style: normal; font-weight: 300; line-height: normal; text-align: center; margin-top:20px; margin-bottom: -40px; background-color:#FFF;">
+<div  class="custom-message" style="color:#1C5389; font-family: Roboto; font-size: 16px; font-style: normal; font-weight: 300; line-height: normal; text-align: center; margin-top:20px; margin-bottom: -40px; background-color:#FFF;">
     NÃO POSSUÍMOS QUALQUER VÍNCULO COM O SUS OU OUTROS PROGRAMAS GOVERNAMENTAIS.
 </div>
- <div id="carouselExample" class="carousel slide flex-sm-row" data-bs-ride="carousel">
+ <div data-aos="fade-up"   id="carouselExample" class="carousel slide flex-sm-row" data-bs-ride="carousel">
      
     <div id="carouselExample" class="carousel slide position-relative" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -521,7 +538,7 @@ flex-shrink: 0;
       
     }
           </style>
-           <div class="title">Lopes Saúde Odontologia</div>
+           <div data-aos="fade-up" class="title">Lopes Saúde Odontologia</div>
             <div class="subtitle";>
               <h1 style="font-size: 1.5em; ">Nossa missão é transformar sorrisos, promovendo saúde, bem-estar, conforto e segurança por meio de tratamentos odontológicos humanizados e programas preventivos personalizados!.</h1>
             </div>
@@ -532,29 +549,40 @@ flex-shrink: 0;
         </div>
       <a href="#form" class="btn btn-success pulsating-btn custom-width" id="agendar-btn" style="font-size: 20px;">Agendar Consulta</a>
  </section  >
+
+
+ 
       <!-- Seção de Tratamentos -->
       <section class="tratamentos" style="width: 100%;   background: rgba(130, 130, 130, 0.19);  ">
      
-    <div  class="tratamentos-section">
-<div class="carousel-container" data-aos="fade-up">
-  <div class="carousel-image image1" style="margin-bottom: 20px;">
+    <div  class="tratamentos-section" >
+<div class="carousel-container"  >
+  <div class="carousel-image image1"  data-aos="fade-left" data-aos-duration="1000"  style="margin-bottom: 20px;">
     <div class="caption" style="text-align: center;">Ortodontia</div>
   </div>
-  <div class="carousel-image image2"  style="margin-bottom: 20px;">
+  <div class="carousel-image image2"  data-aos="fade-left" data-aos-duration="2000"  style="margin-bottom: 20px;">
     <div class="caption">Clínica Geral</div>
   </div>
-  <div class="carousel-image image3"  style="margin-bottom: 20px;">
+  <div class="carousel-image image3"  data-aos="fade-left" data-aos-duration="3000" style="margin-bottom: 20px;">
     <div class="caption">Exodontia</div>
   </div>
-  <div class="carousel-image image4" style="margin-bottom: 20px;">
+  <div class="carousel-image image4"  data-aos="fade-left" data-aos-duration="1000" style="margin-bottom: 20px;">
     <div class="caption">Implante Dentário</div>
   </div>
-  <div class="carousel-image image5" style="margin-bottom: 20px;">
+  <div class="carousel-image image5"  data-aos="fade-left" data-aos-duration="5000" style="margin-bottom: 20px;">
     <div class="caption">Prótese Dentária</div>
   </div>
-  <div class="carousel-image image6" style="margin-bottom: 20px;">
+  <div class="carousel-image image6"   data-aos="fade-left" data-aos-duration="6000" style="margin-bottom: 20px;">
     <div class="caption">Endontia</div>
   </div>
+
+  <script>
+    AOS.init({
+  duration: 1000, // duração da animação em milissegundos
+  once: true, // anima apenas uma vez quando a imagem entra na viewport
+  // outras opções...
+});
+  </script>
   
   <!-- Adicione mais divs conforme necessário -->
 </div>
@@ -562,7 +590,7 @@ flex-shrink: 0;
 <div class="historia-section">
   <div class="historia-text">
     <div>
-      <h1 class="historia-title">Nossa História</h1>
+      <h1 data-aos="fade-up"  class="historia-title">Nossa História</h1>
     </div>
     <p class="historia-text" style="color: #FFF;">
       A Lopes saúde e Odontologia surgiu em 2013 com o sonho de atender as pessoas de todas as classes da cidade de Duartina e região. Onde a dra. Karen Cristina Costa Lopes Aleixo já estava atendendo a mais tempo mas somente com um consultório.
@@ -665,7 +693,7 @@ flex-shrink: 0;
   
 
     <!-- Seção Informações de Contato -->
-    <div class="contato-section" style="width: 100%; height: 900px; margin-bottom: 50px;  ;  display: flex; justify-content: center; align-items: center; flex-direction: column;">
+    <div  data-aos="fade-up"  class="contato-section" style="width: 100%; height: 900px; margin-bottom: 50px;  ;  display: flex; justify-content: center; align-items: center; flex-direction: column;">
     <div class="endereco" style="display: flex; justify-content: center; align-items: center; width: 100%; flex-direction: column; ">
         <div style="display: flex;  width: 100%; justify-content: center; align-items: center; flex-direction: column;">
           <h1 style="color: #000;
@@ -845,7 +873,7 @@ margin-left: -250px;
 
 
  
- <footer id="footer" style="background-image: url(./assets/src/img/MARCA-DAGUA-LOGO-2.png); background-size: cover; width: 100%;">
+ <footer  data-aos="fade-up" id="footer" style="background-image: url(./assets/src/img/MARCA-DAGUA-LOGO-2.png); background-size: cover; width: 100%;">
 
   <div class="footer-top " style="width: 100%;">
     <div class="container">
@@ -859,7 +887,7 @@ margin-left: -250px;
 
         <div class="col-lg-5 col-md-12 footer-info">
           <a href="index.html" class="logo d-flex align-items-center" style="justify-content: center; align-items: center;">
-            <img src="assets/src/img/Rectangle 79.png" alt="" style="width: 150px; height: auto;">
+            <img src="assets/src/img/Black White Minimalist Logo (1).png" alt="" style="width: 150px; height: auto;">
           </a>
           <p style="color: #FFF; font-size: 16px; margin-top: 20px; display: flex; justify-content: center; align-items: center;">Nos siga nas redes sociais</p>
           <div  style=" width: 60px; height: 10px; border-radius: 15px; background: rgba(217, 217, 217, 0.58); display: flex; align-items: center; margin-left: 110px;"></div>
