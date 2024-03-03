@@ -56,20 +56,18 @@
             box-sizing: border-box;
         
         }
+.whatsapp-container {
+    position: fixed;
+    bottom: 20px; /* Customize the distance from the bottom */
+    left: -40px; /* Customize the distance from the left */
+    z-index: 999; /* Ensure it's above other elements */
+}
 
-        .whatsapp-container {
-            position: fixed;
-            bottom: 20px; /* Customize the distance from the bottom */
-            right: 20px; /* Customize the distance from the right */
-            z-index: 999; /* Ensure it's above other elements */
-        }
+.whatsapp-container img {
+    width: 140px; /* Customize the width of the WhatsApp icon */
+    height: auto; /* Maintain the aspect ratio */
+}
 
-        .whatsapp-container img {
-            width: 140px; /* Customize the width of the WhatsApp icon */
-            height: auto; /* Maintain the aspect ratio */
-            transform: scaleX(-1); /* Invert the image horizontally */
-            margin-right: -50px;
-        }
 #carouselExample {
     margin-top: 40px; /* Ajuste conforme necessário */
 }
@@ -329,6 +327,8 @@
     margin-right: 40px;
     box-sizing: border-box;
     }
+
+    
   }
 
   /* Adicione as classes específicas para cada imagem */
@@ -360,7 +360,8 @@
             </ul>
             <i class="bi bi-list mobile-nav-toggle" style="margin-left:-90px;"></i>
         </nav><!-- .navbar -->
-
+        
+    
         <style>
               #navbar {
     z-index: 1000; /* ou qualquer valor maior do que o z-index do header e das imagens */
@@ -368,15 +369,18 @@
 
         </style>
     </div>
-</header><!-- End Header
+</header>
+
+<!-- End Header
 
 
 
  -->
-   
-<div  class="custom-message" style="color:#1C5389; font-family: Roboto; font-size: 16px; font-style: normal; font-weight: 300; line-height: normal; text-align: center; margin-top:20px; margin-bottom: -40px; background-color:#FFF;">
+     
+<div  class="paragrafo" style="color:#1C5389; font-size: 20px; font-style: normal; font-weight: 300; line-height: normal; text-align: center; margin-top:20px; margin-bottom: -40px; background-color:#FFF;">
     NÃO POSSUÍMOS QUALQUER VÍNCULO COM O SUS OU OUTROS PROGRAMAS GOVERNAMENTAIS.
 </div>
+<br>
  <div data-aos="fade-up"   id="carouselExample" class="carousel slide flex-sm-row" data-bs-ride="carousel">
      
     <div id="carouselExample" class="carousel slide position-relative" data-bs-ride="carousel">
@@ -384,6 +388,17 @@
             <div class="carousel-item active position-relative">
                 <img src="assets/src/img/imagen-fundo.jpg" class="d-block w-100" alt="Slide 1">
          <div class="overlay"></div>
+         <div class="carousel-caption text-center">
+    <div class="divee">
+        <h1 class="h11">Lopes Saúde e Odontologia</h1>
+        <p class="paragrafo">Seu sorriso é nossa prioridade.</p>
+        <a href="#form">
+        <button class="btn btn-success  pulsating-btn" style="font-size: 20px;">
+        
+        Agendar Consulta</button>
+        </a>
+    </div>
+</div>
 
             </div>
             
@@ -455,7 +470,7 @@ flex-shrink: 0;
       <div class="container" data-aos="fade-up">
 
         <header class="section-header">
-          <h2>Nossos Valores</h2>
+         
           <p>Já pensou em poder se alimentar normalmente sem o medo e a insegurança que uma dentadura te traz?</p>
         </header>
 
@@ -463,7 +478,7 @@ flex-shrink: 0;
 
   <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
     <div class="box">
-      <img src="./assets/src/img/exames-dental.png" style="height:225px;" class="img-fluid" alt="">
+      <img src="./assets/src/img/exames-dental.png" style="height:150px;" class="img-fluid" alt="">
       <h3>ACOMPANHAMENTO PRÉ E PÓS CIRÚRGICO</h3>
       <p>Nosso objetivo é proporcionar a melhor experiência possível ao paciente, cuidando de cada detalhe para garantir o sucesso do tratamento.</p>
     </div>
@@ -471,7 +486,7 @@ flex-shrink: 0;
 
   <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
     <div class="box">
-      <img src="./assets/src/img/eaxmes-clinicos.png" style="height:225px;" class="img-fluid" alt="">
+      <img src="./assets/src/img/eaxmes-clinicos.png" style="height:150px;" class="img-fluid" alt="">
       <h3>EXAMES DENTRO DA CLÍNICA</h3>
       <p>Conveniência e rapidez: clínica oferece todos os exames necessários no mesmo local! Evitando o deslocamento do paciente e a perda de tempo.</p>
     </div>
@@ -479,7 +494,7 @@ flex-shrink: 0;
 
   <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
     <div class="box">
-      <img src="./assets/src/img/avaliação.png" style="height:225px;" class="img-fluid" alt="">
+      <img src="./assets/src/img/avaliação.png" style="height:150px;" class="img-fluid" alt="">
       <h3>AVALIAÇÃO ESPECIALIZADA</h3>
       <p>Utilizamos tecnologias avançadas para garantir uma avaliação ainda mais precisa e detalhada. Com base nos resultados da avaliação, desenvolvemos um plano de tratamento personalizado para atender as necessidades específicas de cada paciente.</p>
     </div>
@@ -487,7 +502,7 @@ flex-shrink: 0;
   
   <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
     <div class="box">
-      <img src="./assets/src/img/garantia.png" style="height:225px;" class="img-fluid" alt="">
+      <img src="./assets/src/img/garantia.png" style="height:150px;" class="img-fluid" alt="">
       <h3>GARANTIA VITALÍCIA</h3>
       <p>Entendemos que um tratamento odontológico é um investimento para a vida toda. Por isso, oferecemos garantia vitalícia para os nossos implantes dentários.</p>
     </div>
@@ -505,7 +520,7 @@ flex-shrink: 0;
       <!-- Seção de Tratamentos -->
       <section class="tratamentos" style="width: 100%;   background: rgba(130, 130, 130, 0.19);  ">
     <header class="section-header">
-          <h2>Tratemntos</h2>
+          <h2>Tratamentos</h2>
           <p>Conheça  nossos trabalhos</p>
         </header>
     <div  class="tratamentos-section" >
@@ -559,84 +574,66 @@ flex-shrink: 0;
   </div>
 </div>
 
-      <style>
- .historia-section {
+<style>
+.historia-section {
     width: 100%;
     background-color: #1C5389;
-    height: auto; /* Alterada a altura para se ajustar ao conteúdo */
+    height: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Divisão de duas colunas */
-    align-items: center;
-    justify-content: space-around;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    justify-content: center;
     padding: 20px;
     margin-top: 50px;
-  }
+    gap: 20px; /* Adiciona um espaçamento entre os elementos da grid */
+}
 
-  .historia-title {
+.historia-title {
     color: #FFF;
     font-family: Inter;
-    font-size: 60px; /* Tamanho da fonte aumentado */
-    font-style: normal;
+    font-size: 60px;
     font-weight: 700;
-    line-height: normal;
-    margin-top: -100px;
-  }
+    margin-top: 0; /* Ajuste para remover margem negativa */
+}
 
-  .historia-text {
-    max-width: 600px; /* Adapte o valor conforme necessário */
-    text-align: justify; /* Justifica o texto */
+.historia-text, .equipe-link {
+    max-width: 600px;
+    text-align: justify;
     color: #FFF;
-  }
-  .historia-image-wrapper {
-    width: 100%; /* Alterada a largura para ocupar 100% da largura da tela */
-    max-width: 600px; /* Adapte o valor conforme necessário */
-    margin-top: 20px; /* Adapte o valor conforme necessário */
-    border: 10px solid #FFF; /* Adiciona uma borda branca de 10 pixels */
-    box-sizing: border-box; /* Mantém a largura total incluindo a borda */
-  }
+    margin-top: 20px; /* Uniformiza a margem superior */
+}
 
-  .historia-image img {
+.historia-image-wrapper {
     width: 100%;
-    max-width: 100%; /* Utiliza toda a largura da coluna */
+    max-width: 600px; /* Controla a largura máxima da imagem */
+    margin-top: 20px;
+    border: 10px solid #FFF; /* Mantém a borda branca ao redor da imagem */
+    box-sizing: border-box; /* Inclui a borda no cálculo da largura */
+}
+
+.historia-image img {
+    width: 100%;
     height: auto;
     display: block;
-  }
+}
 
-  .equipe-link {
-    color: #FFF;
-    text-decoration: none;
-    font-weight: bold;
-    display: block;
-    margin-top: 20px; /* Adapte o valor conforme necessário */
-  }
-
-  @media (max-width: 767px) {
+@media (max-width: 767px) {
     .historia-section {
-      grid-template-columns: 1fr; /* Uma única coluna para dispositivos móveis */
-      height: auto; /* Ajusta a altura conforme necessário */
+        grid-template-columns: 1fr; /* Ajusta para uma coluna em dispositivos móveis */
     }
 
     .historia-title {
-      font-size: 30px; /* Tamanho menor para dispositivos móveis */
-      margin-top: 0; /* Removido o ajuste negativo para o título */
+        font-size: 30px; /* Ajusta o tamanho da fonte para dispositivos móveis */
+        margin-top: 20px; /* Adiciona espaçamento no topo para dispositivos móveis */
     }
 
-    .historia-text {
-      margin-right: 0;
-      margin-top: 20px; /* Adapte o valor conforme necessário */
-    }
-
-    .historia-image-wrapper {
-      margin-top: 20px; /* Adapte o valor conforme necessário */
-    }
-    .pp{
-        margin-top: 90px;
-      }
-      strong{
+    /* Assegura que o espaçamento entre elementos seja consistente em dispositivos móveis */
+    .historia-text, .historia-image-wrapper, .equipe-link {
         margin-top: 20px;
-      }
-  }
+    }
+}
 </style>
+
 </section>
 
    
@@ -649,13 +646,10 @@ flex-shrink: 0;
     <div  data-aos="fade-up"  class="contato-section" style="width: 100%; height: 900px; margin-bottom: 50px;  ;  display: flex; justify-content: center; align-items: center; flex-direction: column;">
     <div class="endereco" style="display: flex; justify-content: center; align-items: center; width: 100%; flex-direction: column; ">
         <div style="display: flex;  width: 100%; justify-content: center; align-items: center; flex-direction: column;">
-          <h1 style="color: #000;
-font-family: Roboto;
-font-size: 28px;
-font-style: normal;
-font-weight: 200;
-line-height: normal;
-text-align: center;">Unidade 1 - Duartina, AV São Paulo, 227, Centro</h1>
+          <header class="section-header">
+          <h2>Unidade 1 - Duartina, AV São Paulo, 227, Centro</h2>
+          
+        </header>
           <a href="https://www.google.com/maps/search/?api=1&query=Duartina%2C%20Avenida%20S%C3%A3o%20Paulo%2C%20227%2C%20Centro">
           <img src="./assets/src/img/Rectangle 45.png" alt="google-map-clinica-duartina" style="margin-bottom: 50px;">
           </a>
@@ -663,12 +657,10 @@ text-align: center;">Unidade 1 - Duartina, AV São Paulo, 227, Centro</h1>
         
     <div class="endereco" style="display: flex; justify-content: center; align-items: center; width: 100%; flex-direction: column; ">
         <div style="display: flex;  width: 100%; justify-content: center; align-items: center; flex-direction: column;">
-          <h1  style="color: #000;
-font-family: Roboto;
-font-size: 28px;
-font-style: normal;
-font-weight: 200;
-line-height: normal; margin-bottom: 15px; text-align: center;" >Unidade 2 - Bauru: Av Getúlio Vargas  22-25, sala 705, Edíficio Prime Square, Parque jardim Europa</h1>
+           <header class="section-header">
+          <h2>Unidade 2 - Bauru: Av Getúlio Vargas 22-25, sala 705, Edíficio Prime Square, Parque jardim Europa</h2>
+          
+        </header>
           <a href="https://www.google.com/maps/search/Bauru:+Av+Get%C3%BAlio+Vargas++22-25,+sala+705,+Ed%C3%ADficio+Prime+Square,+Parque+jardim+Europa/@-22.3521589,-49.0528991,17z/data=!3m1!4b1?entry=ttu">
           <img src="./assets/src/img/Rectangle 46.png" alt="google-maps-clinica-bauru">
           </a>
@@ -687,31 +679,27 @@ line-height: normal; margin-bottom: 15px; text-align: center;" >Unidade 2 - Baur
         </header>
 
         <div class="row gy-4">
-
-          <div class="col-lg-6">
-
-            <div class="row gy-4">
-             
-              <div class="col-md-6">
-                <div class="info-box">
-                  <i class="bi bi-telephone"></i>
-                  <h3>Ligue-nos</h3>
-                   <a href="tel:+14996684609">Ligar para 14996684609</a>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-box">
-                  <i class="bi bi-envelope"></i>
-                  <h3>Email</h3>
-                  <a href="lopes.saude@hotmail.com">
-                  <p>lopes.saude@hotmail.com</p>
-                  </a>
-                </div>
-              </div>
-              
+        <div class="col-lg-6">
+    <div class="row gy-4">
+        <!-- Telefone -->
+        <div class="col-8"> <!-- Alterado de col-md-6 para col-12 -->
+            <div class="info-box">
+                <i class="bi bi-telephone"></i>
+                <h3>Ligue-nos</h3>
+                <a href="tel:+14996684609">Ligar para 14996684609</a>
             </div>
-
-          </div>
+        </div>
+        <!-- Email -->
+        <div class="col-8"> <!-- Alterado de col-md-6 para col-12 -->
+            <div class="info-box">
+                <i class="bi bi-envelope"></i>
+                <h3>Email</h3>
+                <a href="mailto:lopes.saude@hotmail.com">lopes.saude@hotmail.com</a> <!-- Corrigido para usar mailto: -->
+            </div>
+        </div>
+    </div>
+</div>
+          
 
           <div class="col-lg-6">
             <form id="form">
@@ -826,7 +814,7 @@ margin-left: -250px;
 
 
  
-   <footer id="footer" style="background: linear-gradient(to bottom, #032652, #1e5e99, #000);" class="footer">
+   <footer id="footer" style="background: linear-gradient(to bottom, #032652, #0d2e4d, #000);" class="footer">
 
  
 
@@ -838,15 +826,16 @@ margin-left: -250px;
               <img src="assets/src/img/logo-oficial.png" alt="" style="width:250px; height:250px;">
               
             
-            <p style="color: white;">Nossa missão é transformar sorrisos, promovendo saúde, bem-estar, conforto e segurança por meio de tratamentos odontológicos humanizados e programas preventivos personalizados!.</p>
+            <p style="color: white;">Nossa missão é transformar sorrisos, promovendo saúde, bem-estar, conforto e segurança por meio de tratamentos odontológicos humanizados e programas preventivos personalizados!</p>
             <div class="social-links mt-3">
                <a href="https://www.facebook.com/lopesaude?mibextid=ZbWKwL" class="facebook"><i class="bi bi-facebook" style="color: #fff;"></i></a>
               <a href="https://www.instagram.com/lopes_saude?igshid=NGVhN2U2NjQ0Yg==" class="instagram"><i class="bi bi-instagram" style="color: #fff;"></i></a>
               <a href="https://wa.me/5514996684609?text=Gostaria%20de%20agendar%20uma%20consulta" class="linkedin" style="color: #fff;"><i class="bi bi-whatsapp"></i></a>
             </div>
           </div>
-
-          <div class="col-lg-2 col-6 footer-links">
+          
+          <div style="display: flex; flex-direction: row; justify-content: right; margin-right: 50px; margin-top: -350px;">
+          <div class="col-lg-2 col-6 footer-links" style="margin-top: 124px; ">
             <h4 style="color: white;">Links Uteis</h4>
             <ul>
               <li><i class="bi bi-chevron-right" ></i> <a style="color: #fff;" href="index.html">Inicio</a></li>
@@ -857,7 +846,7 @@ margin-left: -250px;
             </ul>
           </div>
 
-          <div class="col-lg-2 col-6 footer-links">
+          <div class="col-lg-2 col-6 footer-links" style="margin-top: 120px; ">
             <h4 style="color: white;">Nossos serviços</h4>
             <ul>
               <li><i class="bi bi-chevron-right"></i> <a   style="color: white;" href="tratamentos.html">ORTODONTIA</a></li>
@@ -868,7 +857,7 @@ margin-left: -250px;
             </ul>
           </div>
 
-          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start" style="margin-top: 120px;">
             <h4  style="color: white;">Contate-nos</h4>
             <p style="color: white;">
                Duartina<br>
@@ -879,7 +868,7 @@ margin-left: -250px;
             </p>
 
           </div>
-
+          </div>
         </div>
       </div>
     </div>
