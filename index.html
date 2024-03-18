@@ -1,1 +1,904 @@
-<h1>ola!</h1>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title> Lopes saude e odontologia</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/src/img/logo1.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: FlexStart
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+<script>
+  AOS.init();
+</script>
+<body>
+<div class="whatsapp-container">
+        <a href="https://wa.me/5514996684609?text=Gostaria%20de%20agendar%20uma%20consulta" target="_blank">
+            <img src="./assets/src/img/whtasapp.png" alt="WhatsApp">
+        </a>
+    </div>
+
+
+  <!-- ======= Header ======= -->
+ <style>
+     body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        
+        }
+.whatsapp-container {
+    position: fixed;
+    bottom: 20px; /* Customize the distance from the bottom */
+    left: -40px; /* Customize the distance from the left */
+    z-index: 999; /* Ensure it's above other elements */
+}
+
+.whatsapp-container img {
+    width: 140px; /* Customize the width of the WhatsApp icon */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+#carouselExample {
+    margin-top: 40px; /* Ajuste conforme necessário */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.section {
+    background-image: url(./assets/src/img/Rectangle\ 5433.png);
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Adicionado para centralizar verticalmente */
+    text-align: center;
+}
+
+.title {
+    color: #1C5389;
+    font-family: 'Panettone DEMO', sans-serif;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #000;
+    font-family: Roboto;
+    margin-top: 30px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.mission {
+    margin-top: 20px; /* Ajuste o espaçamento superior conforme necessário */
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 10px; /* Ajuste o espaçamento superior do botão conforme necessário */
+    padding: 10px 20px;
+    background-color: #15be56;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.content-box {
+    width: 100%;
+    height: 319px;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+    border: 1px solid #000;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    align-self: center; /* Adicionado para centralizar a .content-box verticalmente */
+}
+
+
+.contato-section {
+    width: 430px;
+    height: 986px;
+    flex-shrink: 0;
+    background: rgba(217, 217, 217, 0.24);
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.endereco {
+    margin-top: 20px;
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+.endereco img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.formulario-section {
+    width: 447px;
+    height: 661px;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.formulario-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.btn-agendar {
+    width: 100%;
+    padding: 15px;
+    background-color: #28a745;
+    color: #fff;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+    box-sizing: border-box;
+} 
+
+   .containerr {
+    background: rgba(79, 79, 79, 0.83);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: calc(100% - 80px);                    /* 80px para contar margens esquerda e direita */
+    height: 230px;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-sizing: border-box;               /* Inclui as margens no cálculo total da largura */
+  }
+
+  .carousel-caption {
+    display: flex;
+    align-items: center;
+ justify-content: center;
+    top: 50%;
+    left: 50%;
+    margin-right: 10px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    flex-shrink: 0;
+  }
+
+    .pulsating-btn {
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    /* Estilo adicional para ajustar a largura conforme necessário */
+    .custom-width {
+      width: 250px; /* Ajuste a largura conforme necessário */
+    }
+
+    .tratamentos-title {
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    color: #1C5389;
+    font-family: Hermeneus One;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .tratamentos-section {
+    margin-bottom: 20px; /* Adiciona margem abaixo da seção */
+  }
+
+  .carousel-container {
+  display: flex;
+  flex-direction: column; /* Garante disposição vertical no mobile */
+  align-items: center; /* Centraliza as imagens no mobile */
+  overflow: hidden;
+}
+
+/* Adiciona animações individuais para cada imagem */
+.carousel-image {
+  background-size: cover;
+  background-position: center;
+  border-radius: 24px;
+  width: 90%; /* Ajuste para tamanhos maiores */
+  max-width: 368px; /* Limite máximo para desktop */
+  height: 300px;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: slideInRight 0.5s forwards;
+  cursor: pointer; /* Muda o cursor para indicar clicável */
+  position: relative; /* Necessário para posicionar a legenda absolutamente dentro */
+}
+
+
+@media (min-width: 768px) {
+  .carousel-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Distribui espaço entre imagens */
+  }
+  .carousel-image {
+    width: calc(50% - 40px); /* Duas imagens por linha com espaçamento */
+    margin: 20px; /* Espaçamento entre imagens */
+  }
+}
+
+@media (max-width: 767px) {
+  .carousel-image {
+    width: 80%; /* Ocupa mais espaço na tela */
+  }
+}
+
+.caption {
+  display: none; /* Esconde a legenda por padrão */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  padding: 5px;
+  transition: 0.3s; /* Suaviza o aparecimento */
+}
+
+.carousel-image:hover .caption {
+  display: block; /* Mostra a legenda ao passar o mouse */
+}
+ @media (max-width: 767px) {
+    .dive {
+    background: rgba(79, 79, 79, 0.83);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 500px;                    /* 80px para contar margens esquerda e direita */
+    height: 230px;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-sizing: border-box;
+    }
+
+    
+  }
+
+  /* Adicione as classes específicas para cada imagem */
+  .image1 { background-image: url('./assets/src/img/tratamentos/pexels-cottonbro-studio-6529121.jpg');  width: 300px;}
+  .image2 { background-image: url('./assets/src/img/tratamentos/clareamento\ dentario.webp');  width: 300px; }
+  .image3 { background-image: url('./assets/src/img/tratamentos/exodontia.jfif');  width: 300px; }
+  .image4 { background-image: url('./assets/src/img/tratamentos/implates\ dentarios.jpg');  width: 300px;}
+  .image5 { background-image: url('./assets/src/img/tratamentos/protese-dentaria-1.jpg');  width: 300px;}
+  .image6 { background-image: url('./assets/src/img/tratamentos/endodontia.jfif'); width: 300px; }
+  </style>
+</head>
+
+<body>
+
+ <header   id="header"  style="background-color: #0f4b8a;">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      
+        <a href="index.html">
+            <img src="assets/src/img/cropped-WhatsApp-Image-2021-06-25-at-13.52.52-1-180x180.jpeg" style="width: 180px; height: 160px;" alt="logo">
+          
+        </a>
+    
+        <nav id="navbar" class="navbar ">
+            <ul>
+                <li><a class="nav-link scrollto active" href="index.html">Inicio</a></li>
+                <li><a class="nav-link scrollto" href="institucional.html">Institucional</a></li>
+                <li><a class="nav-link scrollto" href="tratamentos.html">Tratamentos</a></li>
+                <li><a class="nav-link scrollto" href="duvidas&perguntas.html">Duvidas & Dicas</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle" style="margin-left:-90px;"></i>
+        </nav><!-- .navbar -->
+        
+    
+        <style>
+              #navbar {
+    z-index: 1000; /* ou qualquer valor maior do que o z-index do header e das imagens */
+}
+
+        </style>
+    </div>
+</header>
+
+<!-- End Header
+
+
+
+ -->
+     
+<div  class="paragrafo" style="color:#1C5389; font-size: 20px; font-style: normal; font-weight: 300; line-height: normal; text-align: center; margin-top:20px; margin-bottom: -40px; background-color:#FFF;">
+    NÃO POSSUÍMOS QUALQUER VÍNCULO COM O SUS OU OUTROS PROGRAMAS GOVERNAMENTAIS.
+</div>
+<br>
+ <div data-aos="fade-up"   id="carouselExample" class="carousel slide flex-sm-row" data-bs-ride="carousel">
+     
+    <div id="carouselExample" class="carousel slide position-relative" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active position-relative">
+                <img src="assets/src/img/imagen-fundo.jpg" class="d-block w-100" alt="Slide 1">
+         <div class="overlay"></div>
+         <div class="carousel-caption text-center">
+    <div class="divee">
+        <h1 class="h11">Lopes Saúde e Odontologia</h1>
+        <p class="paragrafo">Seu sorriso é nossa prioridade.</p>
+        <a href="#form">
+        <button class="btn btn-success  pulsating-btn" style="font-size: 20px;">
+        
+        Agendar Consulta</button>
+        </a>
+    </div>
+</div>
+
+            </div>
+            
+     
+       
+          <style>
+      .divee{
+         background: rgba(79, 79, 79, 0.83);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 500px;                    /* 80px para contar margens esquerda e direita */
+    height: 200px;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-sizing: border-box;
+    
+      }
+
+      .h11{
+        color: #F2F2F2;
+
+font-family: Panettone DEMO;
+      }
+
+      .paragrafo{
+font-family: Roboto; 
+font-size: 30px;
+      }
+
+      @media (max-width: 767px) {
+    .divee {
+    width: 302px;
+height: 150px;
+flex-shrink: 0;
+    margin-left: 20px;
+    }
+
+    .h11{
+      font-size: 18px;
+    }
+
+    .paragrafo{
+      font-size: 15px;
+    }
+  }
+          </style>
+         
+    </div>
+</div>
+
+
+            </div>
+         
+</div>
+
+            </div>
+        </div>
+
+        <!-- Adicione os controles do carrossel -->
+     
+
+  <main id="main">
+ 
+    
+    
+<section id="values" style="background-color: #ffffff;" class="values">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+         
+          <p>Já pensou em poder se alimentar normalmente sem o medo e a insegurança que uma dentadura te traz?</p>
+        </header>
+
+       <div class="row">
+
+  <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+    <div class="box">
+      <img src="./assets/src/img/exames-dental.png" style="height:150px;" class="img-fluid" alt="">
+      <h3>ACOMPANHAMENTO PRÉ E PÓS CIRÚRGICO</h3>
+      <p>Nosso objetivo é proporcionar a melhor experiência possível ao paciente, cuidando de cada detalhe para garantir o sucesso do tratamento.</p>
+    </div>
+  </div>
+
+  <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+    <div class="box">
+      <img src="./assets/src/img/eaxmes-clinicos.png" style="height:150px;" class="img-fluid" alt="">
+      <h3>EXAMES DENTRO DA CLÍNICA</h3>
+      <p>Conveniência e rapidez: clínica oferece todos os exames necessários no mesmo local! Evitando o deslocamento do paciente e a perda de tempo.</p>
+    </div>
+  </div>
+
+  <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
+    <div class="box">
+      <img src="./assets/src/img/avaliação.png" style="height:150px;" class="img-fluid" alt="">
+      <h3>AVALIAÇÃO ESPECIALIZADA</h3>
+      <p>Utilizamos tecnologias avançadas para garantir uma avaliação ainda mais precisa e detalhada. Com base nos resultados da avaliação, desenvolvemos um plano de tratamento personalizado para atender as necessidades específicas de cada paciente.</p>
+    </div>
+  </div>
+  
+  <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
+    <div class="box">
+      <img src="./assets/src/img/garantia.png" style="height:150px;" class="img-fluid" alt="">
+      <h3>GARANTIA VITALÍCIA</h3>
+      <p>Entendemos que um tratamento odontológico é um investimento para a vida toda. Por isso, oferecemos garantia vitalícia para os nossos implantes dentários.</p>
+    </div>
+  </div>
+
+</div>
+
+
+      </div>
+
+    </section><!-- End Values Section -->
+
+
+ 
+      <!-- Seção de Tratamentos -->
+      <section class="tratamentos" style="width: 100%;   background: rgba(130, 130, 130, 0.19);  ">
+    <header class="section-header">
+          <h2>Tratamentos</h2>
+          <p>Conheça nossos tratamentos</p>
+        </header>
+    <div  class="tratamentos-section" >
+<div class="carousel-container"  >
+  <div class="carousel-image image1"  data-aos="fade-left" data-aos-duration="1000"  style="margin-bottom: 20px;">
+    <div class="caption" style="text-align: center;">Ortodontia</div>
+  </div>
+  <div class="carousel-image image2"  data-aos="fade-left" data-aos-duration="2000"  style="margin-bottom: 20px;">
+    <div class="caption">Clínica Geral</div>
+  </div>
+  <div class="carousel-image image3"  data-aos="fade-left" data-aos-duration="3000" style="margin-bottom: 20px;">
+    <div class="caption">Exodontia</div>
+  </div>
+  <div class="carousel-image image4"  data-aos="fade-left" data-aos-duration="1000" style="margin-bottom: 20px;">
+    <div class="caption">Implante Dentário</div>
+  </div>
+  <div class="carousel-image image5"  data-aos="fade-left" data-aos-duration="5000" style="margin-bottom: 20px;">
+    <div class="caption">Prótese Dentária</div>
+  </div>
+  <div class="carousel-image image6"   data-aos="fade-left" data-aos-duration="6000" style="margin-bottom: 20px;">
+    <div class="caption">Endontia</div>
+  </div>
+
+  <script>
+    AOS.init({
+  duration: 1000, // duração da animação em milissegundos
+  once: true, // anima apenas uma vez quando a imagem entra na viewport
+  // outras opções...
+});
+  </script>
+  
+  <!-- Adicione mais divs conforme necessário -->
+</div>
+
+<div class="historia-section">
+  <div class="historia-text">
+    <div>
+      <h1 data-aos="fade-up"  class="historia-title">Nossa História</h1>
+    </div>
+    <p class="historia-text" style="color: #FFF;">
+     A clínica Lopes Saúde e Odontologia surgiu em 2013 com o sonho de atender todas as  pessoas da cidade de Duartina e região, onde a Dra. Karen Cristina Costa Lopes Aleixo já atendia desde 2007, mas somente com um consultório. Hoje em 2024, temos uma clínica completa. Localizados na Avenida São Paulo, 227, no centro de Duartina, a clínica conta com 3 consultórios para atendimento, uma recepção confortável e climatizada, salas com o máximo de conforto e qualidade, além de uma equipe qualificada e dedicada. 
+      <a href="institucional.html" class="equipe-link">Conheça nossa equipe</a>
+    </p>
+  </div>
+  <div class="historia-image-wrapper">
+    <div class="historia-image">
+      <img src="./assets/src/img/interiorclinica (1).jpeg" alt="">
+    </div>
+  </div>
+</div>
+
+<style>
+.historia-section {
+    width: 100%;
+    background-color: #1C5389;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 50px;
+    gap: 20px; /* Adiciona um espaçamento entre os elementos da grid */
+}
+
+.historia-title {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 60px;
+    font-weight: 700;
+    margin-top: 0; /* Ajuste para remover margem negativa */
+}
+
+.historia-text, .equipe-link {
+    max-width: 600px;
+    text-align: justify;
+    color: #FFF;
+    margin-top: 20px; /* Uniformiza a margem superior */
+}
+
+.historia-image-wrapper {
+    width: 100%;
+    max-width: 600px; /* Controla a largura máxima da imagem */
+    margin-top: 20px;
+    border: 10px solid #FFF; /* Mantém a borda branca ao redor da imagem */
+    box-sizing: border-box; /* Inclui a borda no cálculo da largura */
+}
+
+.historia-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 767px) {
+    .historia-section {
+        grid-template-columns: 1fr; /* Ajusta para uma coluna em dispositivos móveis */
+    }
+
+    .historia-title {
+        font-size: 30px; /* Ajusta o tamanho da fonte para dispositivos móveis */
+        margin-top: 20px; /* Adiciona espaçamento no topo para dispositivos móveis */
+    }
+
+    /* Assegura que o espaçamento entre elementos seja consistente em dispositivos móveis */
+    .historia-text, .historia-image-wrapper, .equipe-link {
+        margin-top: 20px;
+    }
+}
+</style>
+
+</section>
+
+   
+    
+
+    <!-- Seção Nossa História -->
+  
+
+    <!-- Seção Informações de Contato -->
+    <div  data-aos="fade-up"  class="contato-section" style="width: 100%; height: 900px; margin-bottom: 50px;  ;  display: flex; justify-content: center; align-items: center; flex-direction: column;">
+    <div class="endereco" style="display: flex; justify-content: center; align-items: center; width: 100%; flex-direction: column; ">
+        <div style="display: flex;  width: 100%; justify-content: center; align-items: center; flex-direction: column;">
+          <header class="section-header">
+          <h2>Unidade 1 - Duartina, AV São Paulo, 227, Centro</h2>
+          
+        </header>
+          <a href="https://www.google.com/maps/search/?api=1&query=Duartina%2C%20Avenida%20S%C3%A3o%20Paulo%2C%20227%2C%20Centro">
+          <img src="./assets/src/img/Rectangle 45.png" alt="google-map-clinica-duartina" style="margin-bottom: 50px;">
+          </a>
+          </div>
+        
+    <div class="endereco" style="display: flex; justify-content: center; align-items: center; width: 100%; flex-direction: column; ">
+        <div style="display: flex;  width: 100%; justify-content: center; align-items: center; flex-direction: column;">
+           <header class="section-header">
+          <h2>Unidade 2 - Bauru: Av Getúlio Vargas 22-25, sala 705, Edíficio Prime Square, Parque jardim Europa</h2>
+          
+        </header>
+          <a href="https://www.google.com/maps/search/Bauru:+Av+Get%C3%BAlio+Vargas++22-25,+sala+705,+Ed%C3%ADficio+Prime+Square,+Parque+jardim+Europa/@-22.3521589,-49.0528991,17z/data=!3m1!4b1?entry=ttu">
+          <img src="./assets/src/img/Rectangle 46.png" alt="google-maps-clinica-bauru">
+          </a>
+          </div>
+        
+    </div>
+</div>
+    </div>
+     <section id="contact" class="contact">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Contato</h2>
+          <p>Contate-nos</p>
+        </header>
+
+        <div class="row gy-4">
+        <div class="col-lg-6">
+    <div class="row gy-4">
+        <!-- Telefone -->
+        <div class="col-8"> <!-- Alterado de col-md-6 para col-12 -->
+            <div class="info-box">
+                <i class="bi bi-telephone"></i>
+                <h3>Ligue-nos</h3>
+                <a href="tel:+14996684609">Ligar para (14)99668-4609
+</a>
+            </div>
+        </div>
+        <!-- Email -->
+        <div class="col-8"> <!-- Alterado de col-md-6 para col-12 -->
+            <div class="info-box">
+                <i class="bi bi-envelope"></i>
+                <h3>Email</h3>
+                <a href="mailto:lopes.saude@hotmail.com">lopes.saude@hotmail.com</a> <!-- Corrigido para usar mailto: -->
+            </div>
+        </div>
+    </div>
+</div>
+          
+
+          <div class="col-lg-6">
+            <form id="form">
+        <div class="row gy-4">
+            <div class="form-title">FORMULÁRIO DE CONTATO</div>
+
+            <div class="col-md-6">
+                <input type="text" name="name" class="form-control" placeholder="Digite seu nome" required>
+            </div>
+
+            <div class="col-md-6 ">
+                <input type="tel" class="form-control" name="tel" placeholder="Digite seu telefone" required>
+            </div>
+
+            <div class="col-md-12">
+                <input  type="email" class="form-control" name="email" placeholder="Digite seu email" required>
+            </div>
+
+            <div class="col-md-6">
+                <input type="text" name="city" class="form-control" placeholder="Digite sua cidade" required>
+            </div>
+
+            <div class="col-md-12">
+                <textarea  type="text" class="form-control" name="message" rows="6" placeholder="Escreva em detalhes sua condição odontológica" required></textarea>
+            </div>
+            <div style="display: flex; justify-content: center; align-items: center;">
+            <button class="btn btn-success pulsating-btn custom-width " style="align-items: center; justify-content: center;" id="agendar-btn">Agendar Consulta</button>
+            </div>
+            
+                
+                
+            </div>
+        </div>
+    </form>
+    
+    </div>
+    
+
+<style>
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./assets/src/img/Rectangle\ 5431.png);
+    padding: 20px;
+   
+    
+    color: white;
+  }
+
+  .form-title {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.form-label {
+  
+margin-left: -250px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+
+  .form-input,
+  .form-textarea {
+    width: 327px;
+    height: 43px;
+    border-radius: 24px;
+    background: #D9D9D9;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .form-textarea {
+    height: 121px;
+    resize: none;
+  }
+
+  .form-button {
+    width: 200px;
+    height: 43px;
+    margin-bottom: 100px;
+    border: none;
+    border-radius: 24px;
+    background: #28a745;
+    cursor: pointer;
+  }
+</style>
+</main><!-- End #main -->
+
+ <div style="background-color: #fff; width: 100%; height: 27px; margin-top: 10px; ;" >
+
+</div>
+
+<div style="background-color: #fff; width: 100%; height: 27px; margin-top: 10px; ;" >
+
+</div>
+
+   <footer id="footer" style="background: linear-gradient(to bottom, #032652, #0d2e4d, #000);" class="footer">
+
+ 
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            
+              <img src="assets/src/img/logo-oficial.png" alt="" style="width:250px; height:250px;">
+              
+            
+            <p style="color: white;">Nossa missão é transformar sorrisos, promovendo saúde, bem-estar, conforto e segurança por meio de tratamentos odontológicos humanizados e programas preventivos personalizados!</p>
+            <div class="social-links mt-3">
+               <a href="https://www.facebook.com/lopesaude?mibextid=ZbWKwL" class="facebook"><i class="bi bi-facebook" style="color: #fff;"></i></a>
+              <a href="https://www.instagram.com/lopes_saude?igshid=NGVhN2U2NjQ0Yg==" class="instagram"><i class="bi bi-instagram" style="color: #fff;"></i></a>
+              <a href="https://wa.me/5514996684609?text=Gostaria%20de%20agendar%20uma%20consulta" class="linkedin" style="color: #fff;"><i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+           
+          <div class="col-lg-2 col-6 footer-links" style="margin-top: 124px; ">
+            <h4 style="color: white;">Links Uteis</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right" ></i> <a style="color: #fff;" href="index.html">Inicio</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a style="color: #fff;" href="institucional.html">Institucional</a></li>
+              <li><i class="bi bi-chevron-right" ></i> <a  style="color: #fff;" href="tratamentos.html">Tratamentos</a></li>
+              <li><i class="bi bi-chevron-right" ></i> <a style="color: #fff;"  href="duvidas&perguntas.html">Duvidas & Dicas</a></li>
+              <li><i class="bi bi-chevron-right" ></i> <a  style="color: #fff;"  href="https://wa.me/5514996684609?text=Gostaria%20de%20agendar%20uma%20consulta">WhatsApp</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links" style="margin-top: 120px; ">
+            <h4 style="color: white;">Nossos serviços</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a   style="color: white;" href="tratamentos.html">ORTODONTIA</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a  style="color: white;" href="tratamentos.html">DOCUMENTAÇÃO ORTODÔNTICA</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a  style="color: white;" href="tratamentos.html">CLÍNICO GERAL</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a  style="color: white;" href="tratamentos.html">IMPLANTE DENTÁRIO</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a  style="color: white;" href="tratamentos.html">PRÓTESE DENTÁRIA</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start" style="margin-top: 120px;">
+            <h4  style="color: white;">Contate-nos</h4>
+            <p style="color: white;">
+               Duartina<br>
+              AV São Paulo,227<br>
+               Centro<br><br>
+              <strong style="color: white;"></strong> Horário de atendimento<br>
+              <strong style="color: white;"></strong>Segunda a Sexta das 8h as 18h<br> Sábado 8h as 12h<br>
+            </p>
+
+          </div>
+          </div>
+          
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright" style="color: white;" >
+        &copy; Copyright <strong><span  style="color: white;">Lopes Saude e Odontologia</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits" style="color: white;">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flexstart-bootstrap-startup-template/ -->
+        Designed by <a href="https://bbferreira.github.io/Agencia_web/">Bocardidev</a>
+      </div>
+    </div>
+    
+  </footer><!-- End Footer -->
+
+
+
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
