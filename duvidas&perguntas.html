@@ -1,1 +1,917 @@
-<h1>Ola</h1>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title> Lopes saude e odontologia</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/src/img/logo1.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: FlexStart
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+<div class="whatsapp-container">
+        <a href="https://wa.me/5514996684609?text=Gostaria%20de%20agendar%20uma%20consulta" target="_blank">
+            <img src="./assets/src/img/whtasapp.png" alt="WhatsApp">
+        </a>
+    </div>
+
+
+  <!-- ======= Header ======= -->
+ <style>
+     body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        
+        }
+
+        .whatsapp-container {
+    position: fixed;
+    bottom: 20px; /* Customize the distance from the bottom */
+    left: -40px; /* Customize the distance from the left */
+    z-index: 999; /* Ensure it's above other elements */
+}
+
+.whatsapp-container img {
+    width: 140px; /* Customize the width of the WhatsApp icon */
+    height: auto; /* Maintain the aspect ratio */
+}
+#carouselExample {
+    margin-top: 40px; /* Ajuste conforme necessário */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.section {
+    background-image: url(./assets/src/img/Rectangle\ 5433.png);
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Adicionado para centralizar verticalmente */
+    text-align: center;
+}
+
+.title {
+    color: #1C5389;
+    font-family: 'Panettone DEMO', sans-serif;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #000;
+    font-family: Roboto;
+    margin-top: 30px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.mission {
+    margin-top: 20px; /* Ajuste o espaçamento superior conforme necessário */
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 10px; /* Ajuste o espaçamento superior do botão conforme necessário */
+    padding: 10px 20px;
+    background-color: #15be56;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.content-box {
+    width: 100%;
+    height: 319px;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+    border: 1px solid #000;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    align-self: center; /* Adicionado para centralizar a .content-box verticalmente */
+}
+
+
+.contato-section {
+    width: 430px;
+    height: 986px;
+    flex-shrink: 0;
+    background: rgba(217, 217, 217, 0.24);
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.endereco {
+    margin-top: 20px;
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+.endereco img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.formulario-section {
+    width: 447px;
+    height: 661px;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.formulario-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.btn-agendar {
+    width: 100%;
+    padding: 15px;
+    background-color: #28a745;
+    color: #fff;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+    box-sizing: border-box;
+} 
+
+   .containerr {
+    background: rgba(79, 79, 79, 0.83);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: calc(100% - 80px);                    /* 80px para contar margens esquerda e direita */
+    height: 230px;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-sizing: border-box;               /* Inclui as margens no cálculo total da largura */
+  }
+
+  .carousel-caption {
+    display: flex;
+    align-items: center;
+ justify-content: center;
+    top: 50%;
+    left: 50%;
+    margin-right: 10px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    flex-shrink: 0;
+  }
+
+    .pulsating-btn {
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    /* Estilo adicional para ajustar a largura conforme necessário */
+    .custom-width {
+      width: 250px; /* Ajuste a largura conforme necessário */
+    }
+
+    .tratamentos-title {
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    color: #1C5389;
+    font-family: Hermeneus One;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .tratamentos-section {
+    margin-bottom: 20px; /* Adiciona margem abaixo da seção */
+  }
+
+  .carousel-container {
+    display: flex;
+    gap: 20px; /* Adiciona espaçamento entre as imagens */
+    overflow-x: auto; /* Permitir rolar horizontalmente */
+  }
+
+  .carousel-image {
+    width: 368px;
+    height: 300px;
+    flex-shrink: 0;
+    background-size: cover;
+    background-position: center;
+    border-radius: 24px;
+    position: relative;
+    overflow: hidden; /* Esconde a legenda por padrão */
+    transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave */
+  }
+
+  .carousel-image:hover {
+    transform: scale(1.1); /* Efeito de escala ao passar o mouse */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ .caption {
+    width: 164px;
+      height: 32px;
+      flex-shrink: 0;
+      background-color: rgba(255, 255, 255, 0.7); /* Cor de fundo da legenda */
+      padding: 5px;
+      text-align: center;
+     
+      transform: translateY(-100%); /* Move a legenda para cima 100% da sua altura */
+    }
+ 
+  @media (max-width: 767px) {
+    .carousel-image {
+     width: 368px;
+    height: 300px;
+    margin-left: 20px;
+    }
+  }
+
+ @media (max-width: 767px) {
+    .dive {
+    background: rgba(79, 79, 79, 0.83);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 500px;                    /* 80px para contar margens esquerda e direita */
+    height: 230px;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-sizing: border-box;
+    }
+  }
+
+  /* Adicione as classes específicas para cada imagem */
+  .image1 { background-image: url('./assets/src/img/tratamentos/pexels-cottonbro-studio-6529121.jpg'); }
+  .image2 { background-image: url('./assets/src/img/tratamentos/clareamento\ dentario.webp'); }
+  .image3 { background-image: url('./assets/src/img/tratamentos/exodontia.jfif'); }
+  .image4 { background-image: url('./assets/src/img/tratamentos/implates\ dentarios.jpg'); }
+  .image5 { background-image: url('./assets/src/img/tratamentos/protese-dentaria-1.jfif'); }
+  .image6 { background-image: url('./assets/src/img/tratamentos/endodontia.jfif'); }
+  </style>
+</head>
+
+<body>
+ <header   id="header"  style="background-color: #0f4b8a;">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      
+        <a href="index.html">
+            <img src="assets/src/img/cropped-WhatsApp-Image-2021-06-25-at-13.52.52-1-180x180.jpeg" style="width: 180px; height: 160px;" alt="logo">
+          
+        </a>
+    
+        <nav id="navbar" class="navbar ">
+            <ul>
+                <li><a class="nav-link scrollto active" href="index.html">Inicio</a></li>
+                <li><a class="nav-link scrollto" href="institucional.html">Institucional</a></li>
+                <li><a class="nav-link scrollto" href="tratamentos.html">Tratamentos</a></li>
+                <li><a class="nav-link scrollto" href="duvidas&perguntas.html">Duvidas & Dicas</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle" style="margin-left:-90px;"></i>
+        </nav><!-- .navbar -->
+
+        <style>
+              #navbar {
+    z-index: 1000; /* ou qualquer valor maior do que o z-index do header e das imagens */
+}
+
+
+        </style>
+    </div>
+</header>
+
+<div  class="paragrafo" style="color:#1C5389; font-size: 20px; font-style: normal; font-weight: 300; line-height: normal; text-align: center; margin-top:20px; margin-bottom: -40px; background-color:#FFF;">
+    NÃO POSSUÍMOS QUALQUER VÍNCULO COM O SUS OU OUTROS PROGRAMAS GOVERNAMENTAIS.
+</div>
+<br>
+ <div data-aos="fade-up"   id="carouselExample" class="carousel slide flex-sm-row" data-bs-ride="carousel">
+     
+    <div id="carouselExample" class="carousel slide position-relative" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active position-relative">
+                <img src="assets/src/img/Rectangle 28.png" class="d-block w-100" alt="Slide 1">
+         <div class="overlay"></div>
+            <div class="carousel-caption text-center">
+    <div class="divee">
+        <h1 class="h11">Lopes Saúde e Odontologia</h1>
+        <p class="paragrafo">Seu sorriso é nossa prioridade.</p>
+        <a href="#form">
+        <button class="btn btn-success  pulsating-btn" style="font-size: 20px;">
+        
+        Agendar Consulta</button>
+        </a>
+    </div>
+            </div>
+</div>
+         </div>
+         </div>
+    </div>
+ </div>
+       
+     <style>
+      .divee{
+         background: rgba(79, 79, 79, 0.83);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 500px;                    /* 80px para contar margens esquerda e direita */
+    height: 200px;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-sizing: border-box;
+    
+      }
+
+      .h11{
+        color: #F2F2F2;
+
+font-family: Panettone DEMO;
+      }
+
+      .paragrafo{
+font-family: Roboto; 
+font-size: 30px;
+      }
+
+      @media (max-width: 767px) {
+    .divee {
+    width: 302px;
+height: 150px;
+flex-shrink: 0;
+    margin-left: 20px;
+    }
+
+    .h11{
+      font-size: 18px;
+    }
+
+    .paragrafo{
+      font-size: 15px;
+    }
+  }
+          </style>
+
+  <main id="main">
+ 
+        <!-- ======= F.A.Q Section ======= -->
+    <section id="faq" class="faq" >
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>F.A.Q</h2>
+          <p>Perguntas Frequntes</p>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <!-- F.A.Q List 1-->
+            <div class="accordion accordion-flush" id="faqlist1">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                      Qual o intervalo indicado entre consultas avaliativas? 
+                  </button>
+                </h2>
+                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                   O intervalo recomendado entre consultas avaliativas pode variar de pessoa para pessoa, mas geralmente é aconselhável visitar o dentista a cada 6 meses. No entanto, seu dentista pode ajustar esse intervalo com base em suas necessidades de saúde bucal específicas.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                    Como realizar a higiene bucal ideal em casa?
+                  </button>
+                </h2>
+                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    A higiene bucal ideal em casa inclui escovar os dentes pelo menos duas vezes ao dia com uma escova de dentes macia e pasta de dente com flúor. Além disso, é importante usar fio dental diariamente para remover a placa entre os dentes e usar enxaguante bucal, se desejado.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                    Como escolher a escova de dentes ideal?
+                  </button>
+                </h2>
+                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                  Escolha uma escova de dentes com cerdas macias para evitar danos à gengiva e ao esmalte dentário. Certifique-se de que a cabeça da escova é pequena o suficiente para alcançar todas as áreas da boca. Substitua a escova a cada 3-4 meses ou quando as cerdas estiverem desgastadas.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+
+            <!-- F.A.Q List 2-->
+            <div class="accordion accordion-flush" id="faqlist2">
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-1">
+                    Qual o valor do tratamento com implantes dentários?
+                  </button>
+                </h2>
+                <div id="faq2-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    O preço do implante dentário varia de acordo com quantidade de dentes que serão substituídos e se haverá a necessidade de enxerto ósseo. Por esse motivo, uma avaliação com um de nossos especialistas é fundamental para entender a necessidade de cada paciente, assim, será possível definir o preço dos implantes dentários.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-2">
+                    Quanto tempo demora o tratamento com implantes?
+                  </button>
+                </h2>
+                <div id="faq2-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    Isso varia de paciente para paciente. Isso porque o implante depende da regeneração dos tecidos que fixam o pino nos ossos, que servem para dar suporte á  prótese. Em alguns casos é possível finalizar o tratamento em 72 horas, chamado de carga imediata. Em outros casos o tratamento leva um pouco mais de tempo, visto que alguns pacientes necessitam de enxerto ósseo. Por isso, não é possível afirmar com clareza o tempo do tratamento.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-3">
+                    O tratamento com implantes dentário doi?
+                  </button>
+                </h2>
+                <div id="faq2-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    Não, o tratamento é indolor. Com o avanço da odontologia é possível que o paciente faça a cirurgia com a anestesia inalatória, onde ele dorme e acorda com os implantes dentários e claro, seguindo todas as recomendações pós cirúrgica recomendadas pelo cirurgião.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End F.A.Q Section -->
+    
+
+
+
+<section id="team" style="background-color: #173958f8; " class="team">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+          <h2 style="color: #fff; font-size: 25px;"> Dicas Odontológicas</h2>
+          <div class="rectangle" style="width: 60px; height: 8px; border-radius: 30px;  background: rgba(217, 217, 217, 0.58); margin-top: 5px;"></div>
+         
+        </header>
+
+        <div class="row gy-4">
+           <div class="col-lg-3 col-md-6 d-flex align-items-stretch"    data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/src/img/tratamentos/dentes.png" class="img-fluid" alt="">
+             
+              </div>
+              <div class="member-info">
+                <h4>Técnica de Escovação Adequada</h4>
+                
+                <p>Incline a escova em um ângulo de 45 graus em relação à gengiva, usando movimentos curtos e suaves. Escove todas as superfícies dos dentes, incluindo a língua e o céu da boca. </p>
+               
+              
+              </div>
+            </div>
+          </div>
+
+
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch"    data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/src/img/tratamentos/escovacao-transformed.jpeg" class="img-fluid" alt="">
+             
+              </div>
+              <div class="member-info">
+                <h4>Tempo Adequado de Escovação</h4>
+                
+                <p>Dedique pelo menos dois minutos à escovação, dividindo igualmente entre as partes superior e inferior da boca. Use um temporizador se necessário para garantir que está cumprindo o tempo adequado.</p>
+              </div>
+            </div>
+          </div>
+
+
+   
+               <div class="col-lg-3 col-md-6 d-flex align-items-stretch"  data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/src/img/tratamentos/paciente.png" class="img-fluid" alt="">
+             
+              </div>
+              <div class="member-info">
+                <h4>Agende Consultas Regulares ao Dentista</h4>
+                
+                <p>Visitas regulares ao dentista são essenciais para limpezas, prevenções e detecção de doenças. Mantenha uma rotina de consultas de acordo com as recomendações do seu dentista.</p>
+            </div>
+          </div>
+
+          <br>
+               <div class="col-lg-3 col-md-6 d-flex align-items-stretch"  data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/src/img/tratamentos/enxague.jpg" class="img-fluid" alt="">
+             
+              </div>
+              <div class="member-info">
+                <h4>Use enxaguante bucal</h4>
+                
+                <p>Um enxaguante bucal com flúor pode ser uma adição benéfica à sua rotina, ajudando a fortalecer os dentes e proporcionar um hálito fresco.</p>
+              </div>
+            </div>
+          </div>
+               
+
+      </div>
+
+    </section>
+
+    
+      <section id="contact" class="contact" >
+
+       <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Contato</h2>
+          <p>Contate-nos</p>
+        </header>
+
+        <div class="row gy-4">
+        <div class="col-lg-6">
+    <div class="row gy-4">
+        <!-- Telefone -->
+        <div class="col-8"> <!-- Alterado de col-md-6 para col-12 -->
+            <div class="info-box">
+                <i class="bi bi-telephone"></i>
+                <h3>Ligue-nos</h3>
+                <a href="tel:+14996684609">Ligar para 14996684609</a>
+            </div>
+        </div>
+        <!-- Email -->
+        <div class="col-8"> <!-- Alterado de col-md-6 para col-12 -->
+            <div class="info-box">
+                <i class="bi bi-envelope"></i>
+                <h3>Email</h3>
+                <a href="mailto:lopes.saude@hotmail.com">lopes.saude@hotmail.com</a> <!-- Corrigido para usar mailto: -->
+            </div>
+        </div>
+    </div>
+</div>
+          
+
+          <div class="col-lg-6">
+            <form id="form">
+        <div class="row gy-4">
+            <div class="form-title">FORMULÁRIO DE CONTATO</div>
+
+            <div class="col-md-6">
+                <input type="text" name="name" class="form-control" placeholder="Digite seu nome" required>
+            </div>
+
+            <div class="col-md-6 ">
+                <input type="tel" class="form-control" name="tel" placeholder="Digite seu telefone" required>
+            </div>
+
+            <div class="col-md-12">
+                <input  type="email" class="form-control" name="email" placeholder="Digite seu email" required>
+            </div>
+
+            <div class="col-md-6">
+                <input type="text" name="city" class="form-control" placeholder="Digite sua cidade" required>
+            </div>
+
+            <div class="col-md-12">
+                <textarea  type="text" class="form-control" name="message" rows="6" placeholder="Escreva em detalhes sua condição odontológica" required></textarea>
+            </div>
+            <div style="display: flex; justify-content: center; align-items: center;">
+            <button class="btn btn-success pulsating-btn custom-width " style="align-items: center; justify-content: center;" id="agendar-btn">Agendar Consulta</button>
+            </div>
+            
+                
+                
+            </div>
+        </div>
+    </form>
+    
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#form").submit(function (e) {
+                e.preventDefault();
+
+                var name = $("input[name='name']").val();
+                var tel = $("input[name='tel']").val();
+                var email = $("input[name='email']").val();
+                var city = $("input[name='city']").val();
+                var message = $("textarea[name='message']").val();
+
+                // Crie o link do WhatsApp com as informações do formulário
+                var whatsappLink = "https://wa.me/5514996684609?text=" +
+                    "Nome: " + name + "%0A" +
+                    "Telefone: " + tel + "%0A" +
+                    "Email: " + email + "%0A" +
+                    "Cidade: " + city + "%0A" +
+                    "Mensagem: " + message;
+
+                // Abra o link no WhatsApp
+                window.open(whatsappLink, '_blank');
+            });
+        });
+    </script>
+          </div>
+   
+
+
+<style>
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./assets/src/img/Rectangle\ 5431.png);
+    padding: 20px;
+   
+    
+    color: white;
+  }
+
+  .form-title {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.form-label {
+  
+margin-left: -250px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+
+  .form-input,
+  .form-textarea {
+    width: 327px;
+    height: 43px;
+    border-radius: 24px;
+    background: #D9D9D9;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .form-textarea {
+    height: 121px;
+    resize: none;
+  }
+
+  .form-button {
+    width: 200px;
+    height: 43px;
+    margin-bottom: 100px;
+    border: none;
+    border-radius: 24px;
+    background: #28a745;
+    cursor: pointer;
+  }
+</style>
+
+  </main><!-- End #main -->
+
+
+ 
+   <footer id="footer" style="background: linear-gradient(to bottom, #032652, #0d2e4d, #000);" class="footer">
+
+ 
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            
+              <img src="assets/src/img/logo-oficial.png" alt="" style="width:250px; height:250px;">
+              
+            
+            <p style="color: white;">Nossa missão é transformar sorrisos, promovendo saúde, bem-estar, conforto e segurança por meio de tratamentos odontológicos humanizados e programas preventivos personalizados!</p>
+            <div class="social-links mt-3">
+               <a href="https://www.facebook.com/lopesaude?mibextid=ZbWKwL" class="facebook"><i class="bi bi-facebook" style="color: #fff;"></i></a>
+              <a href="https://www.instagram.com/lopes_saude?igshid=NGVhN2U2NjQ0Yg==" class="instagram"><i class="bi bi-instagram" style="color: #fff;"></i></a>
+              <a href="https://wa.me/5514996684609?text=Gostaria%20de%20agendar%20uma%20consulta" class="linkedin" style="color: #fff;"><i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+           
+          <div class="col-lg-2 col-6 footer-links" style="margin-top: 124px; ">
+            <h4 style="color: white;">Links Uteis</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right" ></i> <a style="color: #fff;" href="index.html">Inicio</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a style="color: #fff;" href="institucional.html">Institucional</a></li>
+              <li><i class="bi bi-chevron-right" ></i> <a  style="color: #fff;" href="tratamentos.html">Tratamentos</a></li>
+              <li><i class="bi bi-chevron-right" ></i> <a style="color: #fff;"  href="duvidas&perguntas.html">Duvidas & Dicas</a></li>
+              <li><i class="bi bi-chevron-right" ></i> <a  style="color: #fff;"  href="https://wa.me/5514996684609?text=Gostaria%20de%20agendar%20uma%20consulta">WhatsApp</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links" style="margin-top: 120px; ">
+            <h4 style="color: white;">Nossos serviços</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a   style="color: white;" href="tratamentos.html">ORTODONTIA</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a  style="color: white;" href="tratamentos.html">DOCUMENTAÇÃO ORTODÔNTICA</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a  style="color: white;" href="tratamentos.html">CLÍNICO GERAL</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a  style="color: white;" href="tratamentos.html">IMPLANTE DENTÁRIO</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a  style="color: white;" href="tratamentos.html">PRÓTESE DENTÁRIA</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start" style="margin-top: 120px;">
+            <h4  style="color: white;">Contate-nos</h4>
+            <p style="color: white;">
+               Duartina<br>
+              AV São Paulo,227<br>
+               Centro<br><br>
+              <strong style="color: white;"></strong> Horário de atendimento<br>
+              <strong style="color: white;"></strong>Seg a Sexta das 8h as 18h<br> Sábado 8h as 12h<br>
+            </p>
+
+          </div>
+          </div>
+          
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright" style="color: white;" >
+        &copy; Copyright <strong><span  style="color: white;">Lopes Saude e Odontologia</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits" style="color: white;">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flexstart-bootstrap-startup-template/ -->
+        Designed by <a href="https://bbferreira.github.io/Agencia_web/">Bocardidev</a>
+      </div>
+    </div>
+    
+  </footer><!-- End Footer -->
+
+
+
+
+<style>
+  
+
+/* Media query para telas de até 768px */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+    }
+    
+    .footer-links-services, .footer-info {
+        width: 100%;
+        text-align: center; /* Ajuste se necessário */
+    }
+
+    /* Se você quiser remover a margem negativa apenas em dispositivos móveis */
+    .footer-container {
+        margin-top: 0;
+    }
+    
+    /* Ajuste para os blocos internos, se necessário, para que fiquem alinhados corretamente em dispositivos móveis */
+    .footer-links, .footer-contact {
+        margin-top: 20px; /* Ajuste conforme necessário */
+    }
+}
+</style>
+
+ 
+
+
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
